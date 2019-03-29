@@ -713,7 +713,7 @@
         "如果您正在寻找的数据源在列表中不可用，请按照说明进行添加"
       ],
       "Superset tutorial": [
-        "Superset 教程"
+        "教程"
       ],
       "Choose a visualization type": [
         "选择可视化类型"
@@ -3239,7 +3239,7 @@
         "看板"
       ],
       "Slug": [
-        "可读"URL
+        "可读URL"
       ],
       "Position JSON": [
         "位置参数"

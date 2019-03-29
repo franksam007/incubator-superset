@@ -1088,7 +1088,7 @@ msgstr "如果您正在寻找的数据源在列表中不可用，请按照说明
 
 #: superset/assets/src/addSlice/AddSliceContainer.jsx:79
 msgid "Superset tutorial"
-msgstr "Superset 教程"
+msgstr "教程"
 
 #: superset/assets/src/addSlice/AddSliceContainer.jsx:84
 #: superset/assets/src/addSlice/AddSliceContainer.jsx:91
