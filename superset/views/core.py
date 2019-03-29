@@ -224,7 +224,7 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
             'for more information on how to structure your URI.', True),
         'expose_in_sqllab': _('Expose this DB in SQL Lab'),
         'allow_run_async': _(
-            'Operate the database in asynchronous mode, meaning  '
+            'Operate the database in asynchronous mode, meaning '
             'that the queries are executed on remote workers as opposed '
             'to on the web server itself. '
             'This assumes that you have a Celery worker setup as well '

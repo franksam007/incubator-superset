@@ -746,11 +746,11 @@ msgstr "搜索结果"
 
 #: superset/assets/src/SqlLab/components/QuerySearch.jsx:177
 msgid "[From]-"
-msgstr "[From]-"
+msgstr "[从]-"
 
 #: superset/assets/src/SqlLab/components/QuerySearch.jsx:187
 msgid "[To]-"
-msgstr "[To]-"
+msgstr "[到]-"
 
 #: superset/assets/src/SqlLab/components/QuerySearch.jsx:196
 msgid "[Query Status]"

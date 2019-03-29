@@ -16,17 +16,17 @@
  specific language governing permissions and limitations
  under the License.
 -->
-{{ user.username }} 您好,
+Dear {{ user.username }},
 <br>
 <a href={{ url_for('Superset.profile', username=granter.username, _external=True) }}>
-   {{ granter.username }}</a> 已经扩展了 {{ role.name }} 角色，包括
+   {{ granter.username }}</a> has extended the role {{ role.name }} to include
 <a href={{ url_for('Superset.explore', datasource_type=datasource.type, datasource_id=datasource.id, _external=True) }}>
- {{datasource.full_name}}</a> 并允许您访问。
+ {{datasource.full_name}}</a> and granted you access to it.
 <br>
 <br>
-访问您的<a href={{ url_for('Superset.profile', username=user.username, _external=True) }}>
-   配置页</a>来查看您的全部权限。
+To see all your permissions please visit your
+<a href={{ url_for('Superset.profile', username=user.username, _external=True) }}>
+   profile page</a>.
 <br>
 <br>
-
-系统管理员
+Regards, Superset Admin.

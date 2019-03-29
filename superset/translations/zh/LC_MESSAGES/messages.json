@@ -2974,6 +2974,9 @@
       "Profile": [
         "用户信息"
       ],
+      "%(user)s's profile": [
+        "%(user)的配置信息"
+      ],
       "Logout": [
         "退出"
       ],
@@ -3031,7 +3034,7 @@
       "This endpoint requires the `all_datasource_access` permission": [
         "这个端点需要“all_datasource_access”的权限"
       ],
-      "The datasource seems to have been deleted": [
+      "The data source seems to have been deleted": [
         "数据源已经被删除"
       ],
       "The access requests seem to have been deleted": [
@@ -3067,6 +3070,9 @@
       "Expose this DB in SQL Lab": [
         "在 SQL 工具箱中公开这个数据库"
       ],
+      "Operate the database in asynchronous mode, meaning that the queries are executed on remote workers as opposed to on the web server itself. This assumes that you have a Celery worker setup as well as a results backend. Refer to the installation docs for more information.": [
+        "异步操作数据库，意味着由远程工作节点执行查询，而非Web服务器自身执行，这假定后端已设置了Celery工作节点。"
+      ],
       "Allow users to run synchronous queries, this is the default and should work well for queries that can be executed within a web request scope (<~1 minute)": [
         "允许用户运行同步查询，这是默认值，可以很好地处理在web请求范围内执行的查询（<~ 1 分钟）"
       ],
@@ -3088,17 +3094,23 @@
       "Allow SQL Lab to fetch a list of all tables and all views across all database schemas. For large data warehouse with thousands of tables, this can be expensive and put strain on the system.": [
         "允许 sql lab 获取所有数据库架构中的所有表和所有视图的列表。对于具有数千个表的大型数据仓库, 这可能会很耗费性能, 并给系统带来压力。"
       ],
+      "Duration (in seconds) of the caching timeout for charts of this database. A timeout of 0 indicates that the cache never expires. Note this defaults to the global timeout if undefined.": [
+        "此数据库图表数据缓存时长（秒）。0代表永不超时。注意全局超时时间为定义。"
+      ],
+      "If selected, please set the schemas allowed for csv upload in Extra.": [
+        "如选中，请额外设置允许CSV上传的模式。"
+      ],
       "Expose in SQL Lab": [
-        "在 SQL 工具箱中公开"
+        "在SQL工具箱中公开"
       ],
       "Allow CREATE TABLE AS": [
-        "允许 CREATE TABLE AS"
+        "允许CREATE TABLE AS"
       ],
       "Allow DML": [
-        "允许 DML"
+        "允许DML"
       ],
       "CTAS Schema": [
-        "CTAS 模式"
+        "CTAS模式"
       ],
       "Creator": [
         "作者"
@@ -3106,8 +3118,14 @@
       "SQLAlchemy URI": [
         "SQLAlchemy URI"
       ],
+      "Chart Cache Timeout": [
+        "图表缓存超时"
+      ],
       "Extra": [
         "扩展"
+      ],
+      "Asynchronous Query Execution": [
+        "异步执行查询"
       ],
       "Allow Run Sync": [
         "允许同步运行"
@@ -3118,11 +3136,23 @@
       "Impersonate the logged on user": [
         "模拟登录用户"
       ],
+      "Allow Csv Upload": [
+        "允许CSV上传"
+      ],
+      "Allow Multi Schema Metadata Fetch": [
+        "允许获取多模式元数据"
+      ],
+      "Backend": [
+        "后端"
+      ],
       "Import Dashboards": [
         "导入仪表盘"
       ],
       "CSV to Database configuration": [
         "csv 到数据库配置"
+      ],
+      "Database \"{0}\" Schema \"{1}\" is not allowed for csv uploads. Please contact Superset Admin": [
+        "数据库\"{0}\" 的模式 \"{1}\" 不允许CSV上载，请联系管理员。"
       ],
       "CSV file \"{0}\" uploaded to table \"{1}\" in database \"{2}\"": [
         "csv 文件 \"{0}\" 上传到数据库 \"{2}\" 中的表 \"{1}\""
@@ -3163,7 +3193,7 @@
       "These parameters are generated dynamically when clicking the save or overwrite button in the explore view. This JSON object is exposed here for reference and for power users who may want to alter specific parameters.": [
         "当单击“保存”或“覆盖”按钮时，这些参数会在视图中动态生成。高级用户可以在这里改变特定的参数。"
       ],
-      "Duration (in seconds) of the caching timeout for this chart.": [
+      "Duration (in seconds) of the caching timeout for this chart. Note this defaults to the datasource/table timeout if undefined.": [
         "图表数据过期时间（秒）"
       ],
       "Last Modified": [
@@ -3209,7 +3239,7 @@
         "看板"
       ],
       "Slug": [
-        "Slug"
+        "可读"URL
       ],
       "Position JSON": [
         "位置参数"
@@ -3226,11 +3256,23 @@
       "Export dashboards?": [
         "导出仪表盘?"
       ],
+      "Logs": [
+        "日志"
+      ],
+      "Show Log": [
+        "显示日志"
+      ],
+      "Add Log": [
+        "添加日志"
+      ],
+      "Edit Log":[
+        "编辑日志"
+      ],
       "Action": [
         "操作"
       ],
       "dttm": [
-        "dttm"
+        "日期时间"
       ],
       "Action Log": [
         "操作日志"
@@ -3250,6 +3292,9 @@
       "You don't have the rights to ": [
         "你没有授权 "
       ],
+      "Explore - %(table)s": [
+        "探索 - %(table)"
+      ],
       "alter this ": [
         "修改这个 "
       ],
@@ -3268,8 +3313,20 @@
       "Chart %(id)s not found": [
         "图表 %(id)s 没有找到"
       ],
+      "Chart [{}] was added to dashboard [{}]": [
+        "图表[{}]被加入仪表盘[{}]"
+      ],
+      "Chart [{}] has been saved": [
+        "图表[{}]已保存"
+      ],
+      "Chart [{}] has been overwritten": [
+        "图表[{}]已覆盖"
+      ],
+      "Dashboard [{}] just got created and chart [{}] was added to it": [
+        "仪表盘[{}]创建，图表[{}]被加入该仪表盘"
+      ],
       "Table %(t)s wasn't found in the database %(d)s": [
-        "在数据库 %(d)s 中找不到表 %(t)s"
+        "在数据库 %(d)s 中找不到表 %(t)"
       ],
       "Can't find User '%(name)s', please ask your admin to create one.": [
         "用户’%(name)s’没有找到，请联系管理员创建。"
@@ -3280,17 +3337,29 @@
       "Query record was not created as expected.": [
         "查询记录没有按预期创建。"
       ],
+      "Failed to start remote query on a worker. Tell your administrator to verify the availability of the message queue.": [
+        "在工作节点启动查询失败，联系管理员确认消息队列的可用性"
+      ],
       "Template Name": [
         "模板名称"
       ],
       "CSS Templates": [
-        "CSS 模板"
+        "CSS模板"
+      ],
+      "Show CSS Template": [
+        "显示CSS模板"
+      ],
+      "Add CSS Template": [
+        "添加CSS模板"
+      ],
+      "Edit CSS Template": [
+        "编辑CSS模板"
       ],
       "SQL Editor": [
-        "SQL 编辑器"
+        "SQL编辑器"
       ],
       "SQL Lab": [
-        "SQL 工具箱"
+        "SQL工具箱"
       ],
       "Query Search": [
         "查询搜索"
