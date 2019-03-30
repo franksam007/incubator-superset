@@ -216,12 +216,12 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
     edit_template = 'superset/models/database/edit.html'
     base_order = ('changed_on', 'desc')
     description_columns = {
-        'sqlalchemy_uri': utils.markdown(
+        'sqlalchemy_uri': utils.markdown(_(
             'Refer to the '
             '[SqlAlchemy docs]'
             '(https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#'
             'database-urls) '
-            'for more information on how to structure your URI.', True),
+            'for more information on how to structure your URI.'), True),
         'expose_in_sqllab': _('Expose this DB in SQL Lab'),
         'allow_run_async': _(
             'Operate the database in asynchronous mode, meaning '
@@ -238,7 +238,7 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
         'force_ctas_schema': _(
             'When allowing CREATE TABLE AS option in SQL Lab, '
             'this option forces the table to be created in this schema'),
-        'extra': utils.markdown(
+        'extra': utils.markdown(_(
             'JSON string containing extra configuration elements.<br/>'
             '1. The ``engine_params`` object gets unpacked into the '
             '[sqlalchemy.create_engine]'
@@ -258,7 +258,7 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
             'Specify it as **"schemas_allowed_for_csv_upload": '
             '["public", "csv_upload"]**. '
             'If database flavor does not support schema or any schema is allowed '
-            'to be accessed, just leave the list empty', True),
+            'to be accessed, just leave the list empty'), True),
         'impersonate_user': _(
             'If Presto, all the queries in SQL Lab are going to be executed as the '
             'currently logged on user who must have permission to run them.<br/>'
@@ -520,6 +520,7 @@ class SliceModelView(SupersetModelView, DeleteMixin):  # noqa
         'creator': _('Creator'),
         'dashboards': _('Dashboards'),
         'datasource_link': _('Datasource'),
+        'datasource_name': _('Datasource Name'),
         'description': _('Description'),
         'modified': _('Last Modified'),
         'owners': _('Owners'),
