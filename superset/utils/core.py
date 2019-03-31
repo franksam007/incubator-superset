@@ -958,6 +958,15 @@ def get_since_until(time_range: Optional[str] = None,
         'Last month': (relative_end - relativedelta(months=1), relative_end),  # noqa: E501, T400
         'Last quarter': (relative_end - relativedelta(months=3), relative_end),  # noqa: E501, T400
         'Last year': (relative_end - relativedelta(years=1), relative_end),  # noqa: T400
+        # TODO:
+        # DateFilerControl.jsx define option values which are not internationalized, so if use non-English, time_range
+        # is not a valid value and cause an error.
+        # The followings are not a viable solution, cause DateFilerControl.jsx does not define internationalized options
+        #_('Last day'): (relative_end - relativedelta(days=1), relative_end),  # noqa: T400
+        #_('Last week'): (relative_end - relativedelta(weeks=1), relative_end),  # noqa: T400
+        #_('Last month'): (relative_end - relativedelta(months=1), relative_end),  # noqa: E501, T400
+        #_('Last quarter'): (relative_end - relativedelta(months=3), relative_end),  # noqa: E501, T400
+        #_('Last year'): (relative_end - relativedelta(years=1), relative_end),  # noqa: T400
     }
 
     if time_range:

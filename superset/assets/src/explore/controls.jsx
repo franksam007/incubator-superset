@@ -950,7 +950,10 @@ export const controls = {
     type: 'DateFilterControl',
     freeForm: true,
     label: t('Time range'),
-    default: t('Last week'),
+    // default: t('Last week'),
+    // remove "t(), because in superset/superset/utils/core.py, the condition strings were not localized, it's a bug
+    // TODO: To localize the option label, but leave the value untouched.
+    default: 'Last week',
   },
 
   max_bubble_size: {
