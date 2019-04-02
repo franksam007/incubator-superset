@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apache Superset 0.22.1\n"
 "Report-Msgid-Bugs-To: zhouyao94@qq.com\n"
-"POT-Creation-Date: 2019-03-30 22:27+0800\n"
+"POT-Creation-Date: 2019-04-02 12:01+0800\n"
 "PO-Revision-Date: 2019-01-04 22:19+0800\n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -31,7 +31,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: superset/connectors/sqla/views.py:253 superset/forms.py:109
 msgid "Table Name"
@@ -211,7 +211,7 @@ msgstr "只允许`SELECT`语句与CREATE TABLE一起使用"
 msgid "Viz is missing a datasource"
 msgstr "Viz缺少一个数据源"
 
-#: superset/utils/core.py:995 superset/viz.py:286
+#: superset/utils/core.py:1004 superset/viz.py:286
 msgid "From date cannot be larger than to date"
 msgstr "起始时间不可以大于当前时间"
 
@@ -416,7 +416,7 @@ msgid "World Map"
 msgstr "世界地图"
 
 #: superset/assets/src/explore/controlPanels/sections.jsx:60
-#: superset/assets/src/explore/controls.jsx:1966 superset/viz.py:1795
+#: superset/assets/src/explore/controls.jsx:1969 superset/viz.py:1795
 msgid "Filters"
 msgstr "过滤"
 
@@ -660,7 +660,7 @@ msgid "SQL"
 msgstr "SQL"
 
 #: superset/assets/src/SqlLab/components/LimitControl.jsx:85
-#: superset/assets/src/explore/controls.jsx:1000
+#: superset/assets/src/explore/controls.jsx:1003
 msgid "Row limit"
 msgstr "行限制"
 
@@ -1106,60 +1106,60 @@ msgstr "点击 收藏/取消收藏"
 msgid "An error occurred while fethching Dashboards"
 msgstr "获取仪表盘时出错"
 
-#: superset/assets/src/components/TableSelector.jsx:138
+#: superset/assets/src/components/TableSelector.jsx:142
 msgid "Error while fetching table list"
 msgstr "获取表列表时出错"
 
-#: superset/assets/src/components/TableSelector.jsx:158
+#: superset/assets/src/components/TableSelector.jsx:162
 msgid "Error while fetching schema list"
 msgstr "获取模式列表时出错"
 
-#: superset/assets/src/components/TableSelector.jsx:220
+#: superset/assets/src/components/TableSelector.jsx:224
 msgid "Error while fetching database list"
 msgstr "获取数据库列表时出错"
 
-#: superset/assets/src/components/TableSelector.jsx:226
+#: superset/assets/src/components/TableSelector.jsx:230
 msgid "Database:"
 msgstr "数据库："
 
-#: superset/assets/src/components/TableSelector.jsx:232
+#: superset/assets/src/components/TableSelector.jsx:236
 msgid "Select a database"
 msgstr "选择一个数据库"
 
-#: superset/assets/src/components/TableSelector.jsx:240
+#: superset/assets/src/components/TableSelector.jsx:244
 #, python-format
 msgid "Select a schema (%s)"
 msgstr "选择一个模式（%s）"
 
-#: superset/assets/src/components/TableSelector.jsx:245
+#: superset/assets/src/components/TableSelector.jsx:249
 msgid "Schema:"
 msgstr "模式："
 
-#: superset/assets/src/components/TableSelector.jsx:254
+#: superset/assets/src/components/TableSelector.jsx:258
 msgid "Force refresh schema list"
 msgstr "强制刷新模式列表"
 
-#: superset/assets/src/components/TableSelector.jsx:262
+#: superset/assets/src/components/TableSelector.jsx:266
 msgid "Type to search ..."
 msgstr "键入搜索 ..."
 
-#: superset/assets/src/components/TableSelector.jsx:264
+#: superset/assets/src/components/TableSelector.jsx:268
 msgid "Select table "
 msgstr "选择表"
 
-#: superset/assets/src/components/TableSelector.jsx:273
+#: superset/assets/src/components/TableSelector.jsx:277
 msgid "Select table or type table name"
 msgstr "选择表或输入表名"
 
-#: superset/assets/src/components/TableSelector.jsx:295
+#: superset/assets/src/components/TableSelector.jsx:299
 msgid "Force refresh table list"
 msgstr "强制刷新表列表"
 
-#: superset/assets/src/components/TableSelector.jsx:302
+#: superset/assets/src/components/TableSelector.jsx:306
 msgid "See table schema"
 msgstr "查看表定义"
 
-#: superset/assets/src/components/TableSelector.jsx:305
+#: superset/assets/src/components/TableSelector.jsx:309
 msgid "in"
 msgstr "在"
 
@@ -1562,9 +1562,9 @@ msgid ""
 "                    field is blank.\n"
 "                  "
 msgstr ""
-"根据DBAPI，将内部日期时间常数转换为数据库日期/时间戳类型的数据库表达式。表达式应遵循%Y-%m-%d %H:%M:%S模式。"
-"字符串应该是Python字符串格式化器，例如对于Oracle，应使用`TO_DATE('{}', 'YYYY-MM-DD HH24:MI:SS')`。"
-"如果本字段为空，系统将基于数据库URI使用默认表达式"
+"根据DBAPI，将内部日期时间常数转换为数据库日期/时间戳类型的数据库表达式。表达式应遵循%Y-%m-%d "
+"%H:%M:%S模式。字符串应该是Python字符串格式化器，例如对于Oracle，应使用`TO_DATE('{}', 'YYYY-MM-DD "
+"HH24:MI:SS')`。如果本字段为空，系统将基于数据库URI使用默认表达式"
 
 #: superset/assets/src/datasource/DatasourceEditor.jsx:139
 msgid "Is Dimension"
@@ -2332,42 +2332,38 @@ msgstr "Pandas 重新采样的填充方法"
 msgid "Time range"
 msgstr "时间范围"
 
-#: superset/assets/src/explore/controls.jsx:953
-msgid "Last week"
-msgstr "上周"
-
-#: superset/assets/src/explore/controls.jsx:959
+#: superset/assets/src/explore/controls.jsx:962
 msgid "Max Bubble Size"
 msgstr "最大泡泡的尺寸"
 
-#: superset/assets/src/explore/controls.jsx:967
+#: superset/assets/src/explore/controls.jsx:970
 msgid "Whisker/outlier options"
 msgstr "（箱须图的）须 / 异常值选项"
 
-#: superset/assets/src/explore/controls.jsx:969
+#: superset/assets/src/explore/controls.jsx:972
 msgid "Determines how whiskers and outliers are calculated."
 msgstr "确定如何计算（箱须图的）胡须和异常值。"
 
-#: superset/assets/src/explore/controls.jsx:980
+#: superset/assets/src/explore/controls.jsx:983
 msgid "Ratio"
 msgstr "比率"
 
-#: superset/assets/src/explore/controls.jsx:984
+#: superset/assets/src/explore/controls.jsx:987
 msgid "Target aspect ratio for treemap tiles."
 msgstr "树形图中瓦片的目标高宽比。"
 
 #: superset/assets/src/explore/controlPanels/BigNumber.js:44
 #: superset/assets/src/explore/controlPanels/BigNumberTotal.js:42
 #: superset/assets/src/explore/controlPanels/Chord.js:46
-#: superset/assets/src/explore/controls.jsx:990
+#: superset/assets/src/explore/controls.jsx:993
 msgid "Number format"
 msgstr "数字格式"
 
-#: superset/assets/src/explore/controls.jsx:1009
+#: superset/assets/src/explore/controls.jsx:1012
 msgid "Series limit"
 msgstr "序列限制"
 
-#: superset/assets/src/explore/controls.jsx:1012
+#: superset/assets/src/explore/controls.jsx:1015
 msgid ""
 "Limits the number of time series that get displayed. A sub query (or an "
 "extra phase where sub queries are not supported) is applied to limit the "
@@ -2375,95 +2371,95 @@ msgid ""
 "useful when grouping by high cardinality dimension(s)."
 msgstr "限制显示的时间序列的数量。应用子查询（或者不支持子查询）来限制获取和显示的时间序列的数量。在高基数维度（S）分组时，此特性是有用的。"
 
-#: superset/assets/src/explore/controls.jsx:1021
+#: superset/assets/src/explore/controls.jsx:1024
 msgid "Sort By"
 msgstr "Sort By（以什么排序）"
 
-#: superset/assets/src/explore/controls.jsx:1023
+#: superset/assets/src/explore/controls.jsx:1026
 msgid "Metric used to define the top series"
 msgstr "用于定义顶级序列的指标"
 
-#: superset/assets/src/explore/controls.jsx:1033
+#: superset/assets/src/explore/controls.jsx:1036
 msgid "Sort Descending"
 msgstr "降序"
 
-#: superset/assets/src/explore/controls.jsx:1035
+#: superset/assets/src/explore/controls.jsx:1038
 msgid "Whether to sort descending or ascending"
 msgstr "是降序还是升序排序"
 
-#: superset/assets/src/explore/controls.jsx:1040
+#: superset/assets/src/explore/controls.jsx:1043
 msgid "Rolling"
 msgstr "滚动"
 
-#: superset/assets/src/explore/controls.jsx:1043
+#: superset/assets/src/explore/controls.jsx:1046
 msgid ""
 "Defines a rolling window function to apply, works along with the "
 "[Periods] text box"
 msgstr "定义要应用的滚动窗口函数，与 [Periods] 文本框一起使用"
 
-#: superset/assets/src/explore/controls.jsx:1049
+#: superset/assets/src/explore/controls.jsx:1052
 msgid "Multiplier"
 msgstr "乘数"
 
-#: superset/assets/src/explore/controls.jsx:1053
+#: superset/assets/src/explore/controls.jsx:1056
 msgid "Factor to multiply the metric by"
 msgstr "因子乘以度量"
 
-#: superset/assets/src/explore/controls.jsx:1058
+#: superset/assets/src/explore/controls.jsx:1061
 msgid "Periods"
 msgstr "期限"
 
-#: superset/assets/src/explore/controls.jsx:1060
+#: superset/assets/src/explore/controls.jsx:1063
 msgid ""
 "Defines the size of the rolling window function, relative to the time "
 "granularity selected"
 msgstr "定义滚动窗口函数的大小，相对于所选的时间粒度"
 
-#: superset/assets/src/explore/controls.jsx:1070
+#: superset/assets/src/explore/controls.jsx:1073
 msgid "Cell Size"
 msgstr "单元尺寸"
 
-#: superset/assets/src/explore/controls.jsx:1071
+#: superset/assets/src/explore/controls.jsx:1074
 msgid "The size of the square cell, in pixels"
 msgstr "平方单元的大小，以像素为单位"
 
-#: superset/assets/src/explore/controls.jsx:1080
+#: superset/assets/src/explore/controls.jsx:1083
 msgid "Cell Padding"
 msgstr "细胞填充"
 
-#: superset/assets/src/explore/controls.jsx:1081
+#: superset/assets/src/explore/controls.jsx:1084
 msgid "The distance between cells, in pixels"
 msgstr "单元格之间的距离，以像素为单位"
 
-#: superset/assets/src/explore/controls.jsx:1090
+#: superset/assets/src/explore/controls.jsx:1093
 msgid "Cell Radius"
 msgstr "单元格半径"
 
-#: superset/assets/src/explore/controls.jsx:1091
+#: superset/assets/src/explore/controls.jsx:1094
 msgid "The pixel radius"
 msgstr "像素半径"
 
-#: superset/assets/src/explore/controls.jsx:1100
+#: superset/assets/src/explore/controls.jsx:1103
 msgid "Color Steps"
 msgstr "色彩Steps"
 
-#: superset/assets/src/explore/controls.jsx:1101
+#: superset/assets/src/explore/controls.jsx:1104
 msgid "The number color \"steps\""
 msgstr "色彩Steps数字"
 
-#: superset/assets/src/explore/controls.jsx:1106
+#: superset/assets/src/explore/controls.jsx:1109
 msgid "Grid Size"
 msgstr "网格大小"
 
-#: superset/assets/src/explore/controls.jsx:1110
+#: superset/assets/src/explore/controls.jsx:1113
 msgid "Defines the grid size in pixels"
 msgstr "定义网格像素大小"
 
-#: superset/assets/src/explore/controls.jsx:1115
+#: superset/assets/src/explore/controls.jsx:1118
 msgid "Min Periods"
 msgstr "最小的期限"
 
-#: superset/assets/src/explore/controls.jsx:1117
+#: superset/assets/src/explore/controls.jsx:1120
 msgid ""
 "The minimum number of rolling periods required to show a value. For "
 "instance if you do a cumulative sum on 7 days you may want your \"Min "
@@ -2475,21 +2471,21 @@ msgstr ""
 "个期间的总和。这将隐藏掉前 7 个阶段的“加速”效果"
 
 #: superset/assets/src/explore/controlPanels/DistBar.js:57
-#: superset/assets/src/explore/controls.jsx:1126
+#: superset/assets/src/explore/controls.jsx:1129
 msgid "Series"
 msgstr "序列"
 
-#: superset/assets/src/explore/controls.jsx:1129
+#: superset/assets/src/explore/controls.jsx:1132
 msgid ""
 "Defines the grouping of entities. Each series is shown as a specific "
 "color on the chart and has a legend toggle"
 msgstr "定义实体的分组。每个系列在图表上显示为特定颜色，并有一个可切换的图例"
 
-#: superset/assets/src/explore/controls.jsx:1136
+#: superset/assets/src/explore/controls.jsx:1139
 msgid "Entity"
 msgstr "实体"
 
-#: superset/assets/src/explore/controls.jsx:1140
+#: superset/assets/src/explore/controls.jsx:1143
 msgid "This defines the element to be plotted on the chart"
 msgstr "这定义了要在图表上绘制的元素"
 
@@ -2501,11 +2497,11 @@ msgstr "这定义了要在图表上绘制的元素"
 #: superset/assets/src/explore/controlPanels/Line.js:38
 #: superset/assets/src/explore/controlPanels/LineMulti.js:37
 #: superset/assets/src/explore/controlPanels/TimePivot.js:43
-#: superset/assets/src/explore/controls.jsx:1145
+#: superset/assets/src/explore/controls.jsx:1148
 msgid "X Axis"
 msgstr "X 轴"
 
-#: superset/assets/src/explore/controls.jsx:1146
+#: superset/assets/src/explore/controls.jsx:1149
 msgid "Metric assigned to the [X] axis"
 msgstr "分配给 [X] 轴的指标"
 
@@ -2515,489 +2511,489 @@ msgstr "分配给 [X] 轴的指标"
 #: superset/assets/src/explore/controlPanels/Compare.js:44
 #: superset/assets/src/explore/controlPanels/Line.js:47
 #: superset/assets/src/explore/controlPanels/TimePivot.js:51
-#: superset/assets/src/explore/controls.jsx:1152
+#: superset/assets/src/explore/controls.jsx:1155
 msgid "Y Axis"
 msgstr "Y 轴"
 
-#: superset/assets/src/explore/controls.jsx:1154
+#: superset/assets/src/explore/controls.jsx:1157
 msgid "Metric assigned to the [Y] axis"
 msgstr "分配给 [Y] 轴的指标"
 
-#: superset/assets/src/explore/controls.jsx:1159
+#: superset/assets/src/explore/controls.jsx:1162
 msgid "Bubble Size"
 msgstr "泡泡大小"
 
-#: superset/assets/src/explore/controls.jsx:1165
+#: superset/assets/src/explore/controls.jsx:1168
 msgid "URL"
 msgstr "URL 地址"
 
-#: superset/assets/src/explore/controls.jsx:1166
+#: superset/assets/src/explore/controls.jsx:1169
 msgid ""
 "The URL, this control is templated, so you can integrate {{ width }} "
 "and/or {{ height }} in your URL string."
 msgstr "URL 网址，此控件是模板化的，所以您可以在您的网址字符串中整合 {{ width }} 和 / 或 {{ height }}。"
 
-#: superset/assets/src/explore/controls.jsx:1173
+#: superset/assets/src/explore/controls.jsx:1176
 msgid "X Axis Label"
 msgstr "X 轴标签"
 
-#: superset/assets/src/explore/controls.jsx:1180
+#: superset/assets/src/explore/controls.jsx:1183
 msgid "Y Axis Label"
 msgstr "Y 轴标签"
 
-#: superset/assets/src/explore/controls.jsx:1187
+#: superset/assets/src/explore/controls.jsx:1190
 msgid "Comparison Period Lag"
 msgstr "比较期延迟"
 
-#: superset/assets/src/explore/controls.jsx:1189
+#: superset/assets/src/explore/controls.jsx:1192
 msgid "Based on granularity, number of time periods to compare against"
 msgstr "根据粒度，比较的时间段数量"
 
-#: superset/assets/src/explore/controls.jsx:1194
+#: superset/assets/src/explore/controls.jsx:1197
 msgid "Comparison suffix"
 msgstr "比较后缀"
 
-#: superset/assets/src/explore/controls.jsx:1195
+#: superset/assets/src/explore/controls.jsx:1198
 msgid "Suffix to apply after the percentage display"
 msgstr "在显示百分比后应用后缀"
 
-#: superset/assets/src/explore/controls.jsx:1201
+#: superset/assets/src/explore/controls.jsx:1204
 msgid "Table Timestamp Format"
 msgstr "表时间戳格式"
 
-#: superset/assets/src/explore/controls.jsx:1207
+#: superset/assets/src/explore/controls.jsx:1210
 msgid "Timestamp Format"
 msgstr "时间戳格式"
 
-#: superset/assets/src/explore/controls.jsx:1214
+#: superset/assets/src/explore/controls.jsx:1217
 msgid "Series Height"
 msgstr "序列高度"
 
-#: superset/assets/src/explore/controls.jsx:1217
+#: superset/assets/src/explore/controls.jsx:1220
 msgid "Pixel height of each series"
 msgstr "每个序列的像素高度"
 
-#: superset/assets/src/explore/controls.jsx:1224
+#: superset/assets/src/explore/controls.jsx:1227
 msgid "Page Length"
 msgstr "页面长度"
 
-#: superset/assets/src/explore/controls.jsx:1227
+#: superset/assets/src/explore/controls.jsx:1230
 msgid "Rows per page, 0 means no pagination"
 msgstr "每页行数，0 表示没有分页"
 
-#: superset/assets/src/explore/controls.jsx:1233
-#: superset/assets/src/explore/controls.jsx:1243
+#: superset/assets/src/explore/controls.jsx:1236
+#: superset/assets/src/explore/controls.jsx:1246
 msgid "X Axis Format"
 msgstr "X 轴格式"
 
-#: superset/assets/src/explore/controls.jsx:1253
+#: superset/assets/src/explore/controls.jsx:1256
 msgid "Y Axis Format"
 msgstr "Y 轴格式"
 
-#: superset/assets/src/explore/controls.jsx:1265
+#: superset/assets/src/explore/controls.jsx:1268
 msgid ""
 "When `Calculation type` is set to \"Percentage change\", the Y Axis "
 "Format is forced to `.1%`"
 msgstr "当`Calculation type`（计算类型）设置为\"Percentage change\"（比例变化），则Y轴格式强制设为`.1%`"
 
-#: superset/assets/src/explore/controls.jsx:1275
+#: superset/assets/src/explore/controls.jsx:1278
 msgid "Right Axis Format"
 msgstr "右轴格式"
 
-#: superset/assets/src/explore/controls.jsx:1284
+#: superset/assets/src/explore/controls.jsx:1287
 msgid "Date Time Format"
 msgstr "时间格式"
 
-#: superset/assets/src/explore/controls.jsx:1293
+#: superset/assets/src/explore/controls.jsx:1296
 msgid "Markup Type"
 msgstr "Markup 格式"
 
-#: superset/assets/src/explore/controls.jsx:1298
+#: superset/assets/src/explore/controls.jsx:1301
 msgid "Pick your favorite markup language"
 msgstr "选择您最爱的 Markup 语言"
 
-#: superset/assets/src/explore/controls.jsx:1303
+#: superset/assets/src/explore/controls.jsx:1306
 msgid "Rotation"
 msgstr "反转"
 
-#: superset/assets/src/explore/controls.jsx:1307
+#: superset/assets/src/explore/controls.jsx:1310
 msgid "Rotation to apply to words in the cloud"
 msgstr "旋转适用于云中的单词"
 
-#: superset/assets/src/explore/controls.jsx:1312
+#: superset/assets/src/explore/controls.jsx:1315
 msgid "Line Style"
 msgstr "线条样式"
 
-#: superset/assets/src/explore/controls.jsx:1317
+#: superset/assets/src/explore/controls.jsx:1320
 msgid "Line interpolation as defined by d3.js"
 msgstr "由 d3.js 定义的线插值"
 
-#: superset/assets/src/explore/controls.jsx:1322
+#: superset/assets/src/explore/controls.jsx:1325
 msgid "Label Type"
 msgstr "标签类型"
 
-#: superset/assets/src/explore/controls.jsx:1332
+#: superset/assets/src/explore/controls.jsx:1335
 msgid "What should be shown on the label?"
 msgstr "什么应该被显示在标签上？"
 
 #: superset/assets/src/explore/controlPanels/Markup.js:24
 #: superset/assets/src/explore/controlPanels/Separator.js:24
-#: superset/assets/src/explore/controls.jsx:1337
+#: superset/assets/src/explore/controls.jsx:1340
 msgid "Code"
 msgstr "代码"
 
-#: superset/assets/src/explore/controls.jsx:1338
+#: superset/assets/src/explore/controls.jsx:1341
 msgid "Put your code here"
 msgstr "把您的代码放在这里"
 
-#: superset/assets/src/explore/controls.jsx:1347
+#: superset/assets/src/explore/controls.jsx:1350
 msgid "Aggregation function"
 msgstr "聚合功能"
 
-#: superset/assets/src/explore/controls.jsx:1358
+#: superset/assets/src/explore/controls.jsx:1361
 msgid ""
 "Aggregate function to apply when pivoting and computing the total rows "
 "and columns"
 msgstr "在旋转和计算总的行和列时，应用聚合函数"
 
-#: superset/assets/src/explore/controls.jsx:1364
+#: superset/assets/src/explore/controls.jsx:1367
 msgid "Dynamic Aggregation Function"
 msgstr "动态聚合函数"
 
-#: superset/assets/src/explore/controls.jsx:1365
+#: superset/assets/src/explore/controls.jsx:1368
 msgid "The function to use when aggregating points into groups"
 msgstr "分组聚合数据点的函数"
 
-#: superset/assets/src/explore/controls.jsx:1388
+#: superset/assets/src/explore/controls.jsx:1391
 msgid "Font Size From"
 msgstr "字型尺寸从"
 
-#: superset/assets/src/explore/controls.jsx:1391
+#: superset/assets/src/explore/controls.jsx:1394
 msgid "Font size for the smallest value in the list"
 msgstr "列表中最小值的字体尺寸"
 
-#: superset/assets/src/explore/controls.jsx:1397
+#: superset/assets/src/explore/controls.jsx:1400
 msgid "Font Size To"
 msgstr "字型尺寸到"
 
-#: superset/assets/src/explore/controls.jsx:1400
+#: superset/assets/src/explore/controls.jsx:1403
 msgid "Font size for the biggest value in the list"
 msgstr "列表中最大值的字体尺寸"
 
-#: superset/assets/src/explore/controls.jsx:1405
+#: superset/assets/src/explore/controls.jsx:1408
 msgid "Instant Filtering"
 msgstr "即时过滤"
 
-#: superset/assets/src/explore/controls.jsx:1416
+#: superset/assets/src/explore/controls.jsx:1419
 msgid "Extruded"
 msgstr "突出"
 
-#: superset/assets/src/explore/controls.jsx:1424
+#: superset/assets/src/explore/controls.jsx:1427
 msgid "Show Range Filter"
 msgstr "显示范围过滤器"
 
-#: superset/assets/src/explore/controls.jsx:1433
+#: superset/assets/src/explore/controls.jsx:1436
 msgid "Whether to display the time range interactive selector"
 msgstr "是否显示时间范围交互选择器"
 
-#: superset/assets/src/explore/controls.jsx:1438
+#: superset/assets/src/explore/controls.jsx:1441
 msgid "Date Filter"
 msgstr "日期过滤器"
 
-#: superset/assets/src/explore/controls.jsx:1440
+#: superset/assets/src/explore/controls.jsx:1443
 msgid "Whether to include a time filter"
 msgstr "是否包含时间过滤器"
 
-#: superset/assets/src/explore/controls.jsx:1445
+#: superset/assets/src/explore/controls.jsx:1448
 msgid "Show SQL Granularity Dropdown"
 msgstr "显示SQL Granularity Dropdown"
 
-#: superset/assets/src/explore/controls.jsx:1447
+#: superset/assets/src/explore/controls.jsx:1450
 msgid "Check to include SQL Granularity dropdown"
 msgstr "检查是否包含SQL粒度下拉"
 
-#: superset/assets/src/explore/controls.jsx:1452
+#: superset/assets/src/explore/controls.jsx:1455
 msgid "Show SQL Time Column"
 msgstr "显示SQL时间列"
 
-#: superset/assets/src/explore/controls.jsx:1454
+#: superset/assets/src/explore/controls.jsx:1457
 msgid "Check to include Time Column dropdown"
 msgstr "检查包含时间列 Dropdown"
 
-#: superset/assets/src/explore/controls.jsx:1459
+#: superset/assets/src/explore/controls.jsx:1462
 msgid "Show Druid Granularity Dropdown"
 msgstr "显示 Druid Granularity Dropdown"
 
-#: superset/assets/src/explore/controls.jsx:1461
+#: superset/assets/src/explore/controls.jsx:1464
 msgid "Check to include Druid Granularity dropdown"
 msgstr "检查包含Druid Granularity Dropdown"
 
-#: superset/assets/src/explore/controls.jsx:1466
+#: superset/assets/src/explore/controls.jsx:1469
 msgid "Show Druid Time Origin"
 msgstr "显示Druid原始时间"
 
-#: superset/assets/src/explore/controls.jsx:1468
+#: superset/assets/src/explore/controls.jsx:1471
 msgid "Check to include Time Origin dropdown"
 msgstr "检查包含Time Origin dropdown"
 
-#: superset/assets/src/explore/controls.jsx:1473
+#: superset/assets/src/explore/controls.jsx:1476
 msgid "Data Table"
 msgstr "数据表"
 
-#: superset/assets/src/explore/controls.jsx:1476
+#: superset/assets/src/explore/controls.jsx:1479
 msgid "Whether to display the interactive data table"
 msgstr "是否显示交互式数据表"
 
-#: superset/assets/src/explore/controls.jsx:1481
+#: superset/assets/src/explore/controls.jsx:1484
 msgid "Search Box"
 msgstr "搜索框"
 
-#: superset/assets/src/explore/controls.jsx:1484
+#: superset/assets/src/explore/controls.jsx:1487
 msgid "Whether to include a client-side search box"
 msgstr "是否包括客户端搜索框"
 
-#: superset/assets/src/explore/controls.jsx:1489
+#: superset/assets/src/explore/controls.jsx:1492
 msgid "Emit Filter Events"
 msgstr "发出过滤事件"
 
-#: superset/assets/src/explore/controls.jsx:1492
+#: superset/assets/src/explore/controls.jsx:1495
 msgid "Whether to apply filter when items are clicked"
 msgstr "是否在点击条目时过滤"
 
-#: superset/assets/src/explore/controls.jsx:1497
+#: superset/assets/src/explore/controls.jsx:1500
 msgid "Align +/-"
 msgstr "对齐 +/-"
 
-#: superset/assets/src/explore/controls.jsx:1500
+#: superset/assets/src/explore/controls.jsx:1503
 msgid "Whether to align the background chart for +/- values"
 msgstr "是否 +/- 对齐背景图数值"
 
-#: superset/assets/src/explore/controls.jsx:1505
+#: superset/assets/src/explore/controls.jsx:1508
 msgid "Color +/-"
 msgstr "色彩 +/-"
 
-#: superset/assets/src/explore/controls.jsx:1508
+#: superset/assets/src/explore/controls.jsx:1511
 msgid "Whether to color +/- values"
 msgstr "是否 +/- 颜色数值"
 
-#: superset/assets/src/explore/controls.jsx:1513
+#: superset/assets/src/explore/controls.jsx:1516
 msgid "Show Bubbles"
 msgstr "显示气泡"
 
-#: superset/assets/src/explore/controls.jsx:1516
+#: superset/assets/src/explore/controls.jsx:1519
 msgid "Whether to display bubbles on top of countries"
 msgstr "是否在国家之上展示气泡"
 
-#: superset/assets/src/explore/controls.jsx:1521
+#: superset/assets/src/explore/controls.jsx:1524
 msgid "Legend"
 msgstr "图例"
 
-#: superset/assets/src/explore/controls.jsx:1524
+#: superset/assets/src/explore/controls.jsx:1527
 msgid "Whether to display the legend (toggles)"
 msgstr "是否显示图例（切换）"
 
-#: superset/assets/src/explore/controls.jsx:1529
+#: superset/assets/src/explore/controls.jsx:1532
 msgid "Propagate"
 msgstr "传播"
 
-#: superset/assets/src/explore/controls.jsx:1532
+#: superset/assets/src/explore/controls.jsx:1535
 msgid "Send range filter events to other charts"
 msgstr "向其他图表发送范围过滤事件"
 
-#: superset/assets/src/explore/controls.jsx:1537
+#: superset/assets/src/explore/controls.jsx:1540
 msgid "Multiple filtering"
 msgstr "多重过滤"
 
-#: superset/assets/src/explore/controls.jsx:1540
+#: superset/assets/src/explore/controls.jsx:1543
 msgid "Allow sending multiple polygons as a filter event"
 msgstr "允许以过滤事件发送多个多边形"
 
-#: superset/assets/src/explore/controls.jsx:1547
+#: superset/assets/src/explore/controls.jsx:1550
 msgid "Number of buckets to group data"
 msgstr "分组数据的桶数"
 
-#: superset/assets/src/explore/controls.jsx:1550
+#: superset/assets/src/explore/controls.jsx:1553
 msgid "How many buckets should the data be grouped in."
 msgstr "数据将被分组到多少个桶中。"
 
-#: superset/assets/src/explore/controls.jsx:1558
+#: superset/assets/src/explore/controls.jsx:1561
 msgid "Bucket break points"
 msgstr "桶分割点"
 
-#: superset/assets/src/explore/controls.jsx:1560
+#: superset/assets/src/explore/controls.jsx:1563
 msgid "List of n+1 values for bucketing metric into n buckets."
 msgstr "n个桶中分桶指标的n+1个数值的列表"
 
-#: superset/assets/src/explore/controls.jsx:1566
+#: superset/assets/src/explore/controls.jsx:1569
 msgid "Show Labels"
 msgstr "显示标签"
 
-#: superset/assets/src/explore/controls.jsx:1569
+#: superset/assets/src/explore/controls.jsx:1572
 msgid ""
 "Whether to display the labels. Note that the label only displays when the"
 " the 5% threshold."
 msgstr "是否显示标签。注意：只在5%阈值内显示标签。"
 
-#: superset/assets/src/explore/controls.jsx:1576
+#: superset/assets/src/explore/controls.jsx:1579
 msgid "Show Values"
 msgstr "显示值"
 
-#: superset/assets/src/explore/controls.jsx:1579
+#: superset/assets/src/explore/controls.jsx:1582
 msgid "Whether to display the numerical values within the cells"
 msgstr "是否在单元格内显示数值"
 
-#: superset/assets/src/explore/controls.jsx:1584
+#: superset/assets/src/explore/controls.jsx:1587
 msgid "Show Metric Names"
 msgstr "显示度量名"
 
-#: superset/assets/src/explore/controls.jsx:1587
+#: superset/assets/src/explore/controls.jsx:1590
 msgid "Whether to display the metric name as a title"
 msgstr "是否将度量名显示为标题"
 
-#: superset/assets/src/explore/controls.jsx:1592
+#: superset/assets/src/explore/controls.jsx:1595
 msgid "Show Trend Line"
 msgstr "显示趋势线"
 
-#: superset/assets/src/explore/controls.jsx:1595
+#: superset/assets/src/explore/controls.jsx:1598
 msgid "Whether to display the trend line"
 msgstr "是否显示趋势线"
 
-#: superset/assets/src/explore/controls.jsx:1600
+#: superset/assets/src/explore/controls.jsx:1603
 msgid "Start y-axis at 0"
 msgstr "Y轴以0为起点"
 
-#: superset/assets/src/explore/controls.jsx:1603
+#: superset/assets/src/explore/controls.jsx:1606
 msgid ""
 "Start y-axis at zero. Uncheck to start y-axis at minimum value in the "
 "data."
 msgstr "Y轴以0为起点。取消选定，可使Y轴以数据点的最小值为起点。"
 
-#: superset/assets/src/explore/controls.jsx:1608
+#: superset/assets/src/explore/controls.jsx:1611
 msgid "X bounds"
 msgstr "X界限"
 
-#: superset/assets/src/explore/controls.jsx:1611
+#: superset/assets/src/explore/controls.jsx:1614
 msgid "Whether to display the min and max values of the X-axis"
 msgstr "是否显示X轴的最小/最大值"
 
-#: superset/assets/src/explore/controls.jsx:1616
+#: superset/assets/src/explore/controls.jsx:1619
 msgid "Y bounds"
 msgstr "Y界限"
 
-#: superset/assets/src/explore/controls.jsx:1619
+#: superset/assets/src/explore/controls.jsx:1622
 msgid "Whether to display the min and max values of the Y-axis"
 msgstr "是否显示Y轴的最小/最大值"
 
-#: superset/assets/src/explore/controls.jsx:1624
+#: superset/assets/src/explore/controls.jsx:1627
 msgid "Rich Tooltip"
 msgstr "丰富的工具提示"
 
-#: superset/assets/src/explore/controls.jsx:1627
+#: superset/assets/src/explore/controls.jsx:1630
 msgid "The rich tooltip shows a list of all series for that point in time"
 msgstr "丰富的工具提示显示了该时间点的所有系列的列表。"
 
-#: superset/assets/src/explore/controls.jsx:1633
+#: superset/assets/src/explore/controls.jsx:1636
 msgid "Y Log Scale"
 msgstr "Y经度标度"
 
-#: superset/assets/src/explore/controls.jsx:1636
+#: superset/assets/src/explore/controls.jsx:1639
 msgid "Use a log scale for the Y-axis"
 msgstr "Y轴使用对数坐标"
 
-#: superset/assets/src/explore/controls.jsx:1641
+#: superset/assets/src/explore/controls.jsx:1644
 msgid "X Log Scale"
 msgstr "X经度标度"
 
-#: superset/assets/src/explore/controls.jsx:1644
+#: superset/assets/src/explore/controls.jsx:1647
 msgid "Use a log scale for the X-axis"
 msgstr "X轴使用对数坐标"
 
-#: superset/assets/src/explore/controls.jsx:1649
+#: superset/assets/src/explore/controls.jsx:1652
 msgid "Log Scale"
 msgstr "对数标度"
 
-#: superset/assets/src/explore/controls.jsx:1652
+#: superset/assets/src/explore/controls.jsx:1655
 msgid "Use a log scale"
 msgstr "使用对数刻度"
 
-#: superset/assets/src/explore/controls.jsx:1657
+#: superset/assets/src/explore/controls.jsx:1660
 msgid "Donut"
 msgstr "圆环图"
 
-#: superset/assets/src/explore/controls.jsx:1660
+#: superset/assets/src/explore/controls.jsx:1663
 msgid "Do you want a donut or a pie?"
 msgstr "您想要圆环图饼还是饼图？"
 
-#: superset/assets/src/explore/controls.jsx:1665
+#: superset/assets/src/explore/controls.jsx:1668
 msgid "Put labels outside"
 msgstr "把标签放在外面"
 
-#: superset/assets/src/explore/controls.jsx:1668
+#: superset/assets/src/explore/controls.jsx:1671
 msgid "Put the labels outside the pie?"
 msgstr "把标签放在饼图外？"
 
-#: superset/assets/src/explore/controls.jsx:1673
+#: superset/assets/src/explore/controls.jsx:1676
 msgid "Contribution"
 msgstr "贡献"
 
-#: superset/assets/src/explore/controls.jsx:1675
+#: superset/assets/src/explore/controls.jsx:1678
 msgid "Compute the contribution to the total"
 msgstr "计算对总数的贡献"
 
-#: superset/assets/src/explore/controls.jsx:1682
+#: superset/assets/src/explore/controls.jsx:1685
 msgid "Time Shift"
 msgstr "时移"
 
-#: superset/assets/src/explore/controls.jsx:1691
+#: superset/assets/src/explore/controls.jsx:1694
 msgid ""
 "Overlay one or more timeseries from a relative time period. Expects "
 "relative time deltas in natural language (example:  24 hours, 7 days, 56 "
 "weeks, 365 days)"
 msgstr "从相对时间段覆盖一个或多个时间序列。期望自然语言中的相对时间增量（例如：24小时、7天、56周、365天）"
 
-#: superset/assets/src/explore/controls.jsx:1699
+#: superset/assets/src/explore/controls.jsx:1702
 msgid "Calculation type"
 msgstr "计算类型"
 
-#: superset/assets/src/explore/controls.jsx:1707
+#: superset/assets/src/explore/controls.jsx:1710
 msgid ""
 "How to display time shifts: as individual lines; as the absolute "
 "difference between the main time series and each time shift; as the "
 "percentage change; or as the ratio between series and time shifts."
 msgstr "如果显示随时间移动的变化：作为独立行、主时间序列随时间移动的绝对差值、变化百分比、时间序列间的比例。"
 
-#: superset/assets/src/explore/controls.jsx:1714
+#: superset/assets/src/explore/controls.jsx:1717
 msgid "Subheader"
 msgstr "子标题"
 
-#: superset/assets/src/explore/controls.jsx:1715
+#: superset/assets/src/explore/controls.jsx:1718
 msgid "Description text that shows up below your Big Number"
 msgstr "在大数字下面显示描述文本"
 
-#: superset/assets/src/explore/controls.jsx:1721
+#: superset/assets/src/explore/controls.jsx:1724
 msgid "label"
 msgstr "标签"
 
-#: superset/assets/src/explore/controls.jsx:1723
+#: superset/assets/src/explore/controls.jsx:1726
 msgid ""
 "`count` is COUNT(*) if a group by is used. Numerical columns will be "
 "aggregated with the aggregator. Non-numerical columns will be used to "
 "label points. Leave empty to get a count of points in each cluster."
 msgstr "“count”是count（*）。数值列将与聚合器聚合。非数值列将用于维度列。留空以获得每个簇中的点计数。"
 
-#: superset/assets/src/explore/controls.jsx:1734
+#: superset/assets/src/explore/controls.jsx:1737
 msgid "Map Style"
 msgstr "地图样式"
 
-#: superset/assets/src/explore/controls.jsx:1746
+#: superset/assets/src/explore/controls.jsx:1749
 msgid "Base layer map style"
 msgstr "地图基本层样式"
 
-#: superset/assets/src/explore/controls.jsx:1752
+#: superset/assets/src/explore/controls.jsx:1755
 msgid "Clustering Radius"
 msgstr "簇半径"
 
-#: superset/assets/src/explore/controls.jsx:1765
+#: superset/assets/src/explore/controls.jsx:1768
 msgid ""
 "The radius (in pixels) the algorithm uses to define a cluster. Choose 0 "
 "to turn off clustering, but beware that a large number of points (>1000) "
@@ -3005,244 +3001,244 @@ msgid ""
 msgstr "算法用来定义一个簇的半径（以像素为单位）。选择0关闭聚，但要注意大量的点（＞1000）会导致处理时间变长。"
 
 #: superset/assets/src/explore/controlPanels/DeckScatter.js:54
-#: superset/assets/src/explore/controls.jsx:1772
+#: superset/assets/src/explore/controls.jsx:1775
 msgid "Point Size"
 msgstr "泡泡大小"
 
-#: superset/assets/src/explore/controls.jsx:1774
+#: superset/assets/src/explore/controls.jsx:1777
 msgid "Fixed point radius"
 msgstr "固定的点半径"
 
-#: superset/assets/src/explore/controls.jsx:1782
+#: superset/assets/src/explore/controls.jsx:1785
 msgid "Point Radius"
 msgstr "点半径"
 
-#: superset/assets/src/explore/controls.jsx:1784
+#: superset/assets/src/explore/controls.jsx:1787
 msgid ""
 "The radius of individual points (ones that are not in a cluster). Either "
 "a numerical column or `Auto`, which scales the point based on the largest"
 " cluster"
 msgstr "单个点的半径（不在簇中的点）。一个数值列或“AUTO”，它根据最大的聚类来缩放点。"
 
-#: superset/assets/src/explore/controls.jsx:1794
+#: superset/assets/src/explore/controls.jsx:1797
 msgid "Point Radius Unit"
 msgstr "点半径单位"
 
-#: superset/assets/src/explore/controls.jsx:1797
-#: superset/assets/src/explore/controls.jsx:1813
+#: superset/assets/src/explore/controls.jsx:1800
+#: superset/assets/src/explore/controls.jsx:1816
 msgid "The unit of measure for the specified point radius"
 msgstr "指定点半径的度量单位"
 
-#: superset/assets/src/explore/controls.jsx:1802
+#: superset/assets/src/explore/controls.jsx:1805
 msgid "Point Unit"
 msgstr "点单位"
 
 #: superset/assets/src/explore/components/controls/AnnotationLayer.jsx:546
-#: superset/assets/src/explore/controls.jsx:1818
-#: superset/assets/src/explore/controls.jsx:1827
+#: superset/assets/src/explore/controls.jsx:1821
+#: superset/assets/src/explore/controls.jsx:1830
 msgid "Opacity"
 msgstr "不透明度"
 
-#: superset/assets/src/explore/controls.jsx:1821
+#: superset/assets/src/explore/controls.jsx:1824
 msgid "Opacity of all clusters, points, and labels. Between 0 and 1."
 msgstr "所有簇、点和标签的不透明度。在0到1之间。"
 
-#: superset/assets/src/explore/controls.jsx:1833
+#: superset/assets/src/explore/controls.jsx:1836
 msgid "Opacity, expects values between 0 and 100"
 msgstr "不透明度，需要0到100的取值"
 
 #: superset/assets/src/explore/controlPanels/Mapbox.js:58
-#: superset/assets/src/explore/controls.jsx:1838
+#: superset/assets/src/explore/controls.jsx:1841
 msgid "Viewport"
 msgstr "视口"
 
-#: superset/assets/src/explore/controls.jsx:1840
+#: superset/assets/src/explore/controls.jsx:1843
 msgid "Parameters related to the view and perspective on the map"
 msgstr "与视图和透视图相关的参数"
 
-#: superset/assets/src/explore/controls.jsx:1849
+#: superset/assets/src/explore/controls.jsx:1852
 msgid "Zoom"
 msgstr "缩放"
 
-#: superset/assets/src/explore/controls.jsx:1853
+#: superset/assets/src/explore/controls.jsx:1856
 msgid "Zoom level of the map"
 msgstr "地图缩放等级"
 
-#: superset/assets/src/explore/controls.jsx:1861
+#: superset/assets/src/explore/controls.jsx:1864
 msgid "Default latitude"
 msgstr "默认纬度"
 
-#: superset/assets/src/explore/controls.jsx:1865
+#: superset/assets/src/explore/controls.jsx:1868
 msgid "Latitude of default viewport"
 msgstr "默认视口纬度"
 
-#: superset/assets/src/explore/controls.jsx:1873
+#: superset/assets/src/explore/controls.jsx:1876
 msgid "Default longitude"
 msgstr "默认经度"
 
-#: superset/assets/src/explore/controls.jsx:1877
+#: superset/assets/src/explore/controls.jsx:1880
 msgid "Longitude of default viewport"
 msgstr "默认视口经度"
 
-#: superset/assets/src/explore/controls.jsx:1885
+#: superset/assets/src/explore/controls.jsx:1888
 msgid "Live render"
 msgstr "实时渲染"
 
-#: superset/assets/src/explore/controls.jsx:1887
+#: superset/assets/src/explore/controls.jsx:1890
 msgid "Points and clusters will update as the viewport is being changed"
 msgstr "点及簇将随视窗变更而更新"
 
-#: superset/assets/src/explore/controls.jsx:1893
+#: superset/assets/src/explore/controls.jsx:1896
 msgid "RGB Color"
 msgstr "RGB颜色"
 
-#: superset/assets/src/explore/controls.jsx:1903
+#: superset/assets/src/explore/controls.jsx:1906
 msgid "The color for points and clusters in RGB"
 msgstr "点和簇的颜色（RGB）"
 
 #: superset/assets/src/explore/components/controls/AnnotationLayer.jsx:558
-#: superset/assets/src/explore/controls.jsx:1908
+#: superset/assets/src/explore/controls.jsx:1911
 msgid "Color"
 msgstr "颜色"
 
-#: superset/assets/src/explore/controls.jsx:1910
+#: superset/assets/src/explore/controls.jsx:1913
 msgid "Pick a color"
 msgstr "选择一个颜色"
 
-#: superset/assets/src/explore/controls.jsx:1915
+#: superset/assets/src/explore/controls.jsx:1918
 msgid "Ranges"
 msgstr "范围"
 
-#: superset/assets/src/explore/controls.jsx:1917
+#: superset/assets/src/explore/controls.jsx:1920
 msgid "Ranges to highlight with shading"
 msgstr "用阴影突出显示的范围"
 
-#: superset/assets/src/explore/controls.jsx:1922
+#: superset/assets/src/explore/controls.jsx:1925
 msgid "Range labels"
 msgstr "范围标签"
 
-#: superset/assets/src/explore/controls.jsx:1924
+#: superset/assets/src/explore/controls.jsx:1927
 msgid "Labels for the ranges"
 msgstr "范围标签"
 
-#: superset/assets/src/explore/controls.jsx:1929
+#: superset/assets/src/explore/controls.jsx:1932
 msgid "Markers"
 msgstr "标记"
 
-#: superset/assets/src/explore/controls.jsx:1931
+#: superset/assets/src/explore/controls.jsx:1934
 msgid "List of values to mark with triangles"
 msgstr "用三角形标记的值的列表"
 
-#: superset/assets/src/explore/controls.jsx:1936
+#: superset/assets/src/explore/controls.jsx:1939
 msgid "Marker labels"
 msgstr "标记标签"
 
-#: superset/assets/src/explore/controls.jsx:1938
+#: superset/assets/src/explore/controls.jsx:1941
 msgid "Labels for the markers"
 msgstr "标记标签"
 
-#: superset/assets/src/explore/controls.jsx:1943
+#: superset/assets/src/explore/controls.jsx:1946
 msgid "Marker lines"
 msgstr "标记线"
 
-#: superset/assets/src/explore/controls.jsx:1945
+#: superset/assets/src/explore/controls.jsx:1948
 msgid "List of values to mark with lines"
 msgstr "用行标记的值列表"
 
-#: superset/assets/src/explore/controls.jsx:1950
+#: superset/assets/src/explore/controls.jsx:1953
 msgid "Marker line labels"
 msgstr "标记线标签"
 
-#: superset/assets/src/explore/controls.jsx:1952
+#: superset/assets/src/explore/controls.jsx:1955
 msgid "Labels for the marker lines"
 msgstr "标记线标签"
 
-#: superset/assets/src/explore/controls.jsx:1983
+#: superset/assets/src/explore/controls.jsx:1986
 msgid "Chart ID"
 msgstr "图表 ID"
 
-#: superset/assets/src/explore/controls.jsx:1985
+#: superset/assets/src/explore/controls.jsx:1988
 msgid "The id of the active chart"
 msgstr "活动图表的ID"
 
-#: superset/assets/src/explore/controls.jsx:1990
+#: superset/assets/src/explore/controls.jsx:1993
 msgid "Cache Timeout (seconds)"
 msgstr "缓存超时（秒）"
 
-#: superset/assets/src/explore/controls.jsx:1992
+#: superset/assets/src/explore/controls.jsx:1995
 msgid "The number of seconds before expiring the cache"
 msgstr "终止缓存前的时间（秒）"
 
-#: superset/assets/src/explore/controls.jsx:1997
+#: superset/assets/src/explore/controls.jsx:2000
 msgid "URL Parameters"
 msgstr "URL参数"
 
-#: superset/assets/src/explore/controls.jsx:1999
+#: superset/assets/src/explore/controls.jsx:2002
 msgid "Extra parameters for use in jinja templated queries"
 msgstr "jinja模板化查询中的额外参数"
 
-#: superset/assets/src/explore/controls.jsx:2004
+#: superset/assets/src/explore/controls.jsx:2007
 msgid "Order by entity id"
 msgstr "按实体ID排序"
 
-#: superset/assets/src/explore/controls.jsx:2005
+#: superset/assets/src/explore/controls.jsx:2008
 msgid ""
 "Important! Select this if the table is not already sorted by entity id, "
 "else there is no guarantee that all events for each entity are returned."
 msgstr "重要！如果表尚未按实体id排序，则选择此选项，否则无法保证返回每个实体的所有事件。"
 
-#: superset/assets/src/explore/controls.jsx:2013
+#: superset/assets/src/explore/controls.jsx:2016
 msgid "Minimum leaf node event count"
 msgstr "最小的叶节点的事件计数"
 
-#: superset/assets/src/explore/controls.jsx:2016
+#: superset/assets/src/explore/controls.jsx:2019
 msgid ""
 "Leaf nodes that represent fewer than this number of events will be "
 "initially hidden in the visualization"
 msgstr "表示少于该事件数量的叶节点将首先隐藏在可视化中。"
 
 #: superset/assets/src/explore/controlPanels/sections.jsx:43
-#: superset/assets/src/explore/controls.jsx:2022
+#: superset/assets/src/explore/controls.jsx:2025
 msgid "Color Scheme"
 msgstr "配色方案"
 
-#: superset/assets/src/explore/controls.jsx:2026
+#: superset/assets/src/explore/controls.jsx:2029
 msgid "The color scheme for rendering chart"
 msgstr "绘制图的配色方案"
 
-#: superset/assets/src/explore/controls.jsx:2032
+#: superset/assets/src/explore/controls.jsx:2035
 msgid "Significance Level"
 msgstr "显著水平"
 
-#: superset/assets/src/explore/controls.jsx:2034
+#: superset/assets/src/explore/controls.jsx:2037
 msgid "Threshold alpha level for determining significance"
 msgstr "确定临界值的α水平"
 
-#: superset/assets/src/explore/controls.jsx:2039
+#: superset/assets/src/explore/controls.jsx:2042
 msgid "p-value precision"
 msgstr "概率值精度"
 
-#: superset/assets/src/explore/controls.jsx:2041
+#: superset/assets/src/explore/controls.jsx:2044
 msgid "Number of decimal places with which to display p-values"
 msgstr "用以显示概率值的小数位数"
 
-#: superset/assets/src/explore/controls.jsx:2046
+#: superset/assets/src/explore/controls.jsx:2049
 msgid "Lift percent precision"
 msgstr "提高百分比精度"
 
-#: superset/assets/src/explore/controls.jsx:2048
+#: superset/assets/src/explore/controls.jsx:2051
 msgid "Number of decimal places with which to display lift values"
 msgstr "用以显示提升值的小数位数"
 
-#: superset/assets/src/explore/controls.jsx:2053
+#: superset/assets/src/explore/controls.jsx:2056
 msgid "Time Series Columns"
 msgstr "时间序列的列"
 
-#: superset/assets/src/explore/controls.jsx:2060
+#: superset/assets/src/explore/controls.jsx:2063
 msgid "Use Area Proportions"
 msgstr "使用面积比例"
 
-#: superset/assets/src/explore/controls.jsx:2061
+#: superset/assets/src/explore/controls.jsx:2064
 msgid ""
 "Check if the Rose Chart should use segment area instead of segment radius"
 " for proportioning"
@@ -3254,200 +3250,200 @@ msgstr "检查玫瑰图是否应使用分段面积代替分段半径"
 #: superset/assets/src/explore/controlPanels/Para.js:35
 #: superset/assets/src/explore/controlPanels/Table.js:53
 #: superset/assets/src/explore/controlPanels/WordCloud.js:34
-#: superset/assets/src/explore/controls.jsx:2071
+#: superset/assets/src/explore/controls.jsx:2074
 msgid "Options"
 msgstr "选项"
 
-#: superset/assets/src/explore/controls.jsx:2077
+#: superset/assets/src/explore/controls.jsx:2080
 msgid "Not Time Series"
 msgstr "没有时间序列"
 
-#: superset/assets/src/explore/controls.jsx:2079
+#: superset/assets/src/explore/controls.jsx:2082
 msgid "Ignore time"
 msgstr "忽略时间"
 
-#: superset/assets/src/explore/controls.jsx:2082
+#: superset/assets/src/explore/controls.jsx:2085
 msgid "Time Series"
 msgstr "时间序列"
 
-#: superset/assets/src/explore/controls.jsx:2084
+#: superset/assets/src/explore/controls.jsx:2087
 msgid "Standard time series"
 msgstr "标准时间序列"
 
-#: superset/assets/src/explore/controls.jsx:2087
+#: superset/assets/src/explore/controls.jsx:2090
 msgid "Aggregate Mean"
 msgstr "聚和平均数"
 
-#: superset/assets/src/explore/controls.jsx:2089
+#: superset/assets/src/explore/controls.jsx:2092
 msgid "Mean of values over specified period"
 msgstr "指定周期内的平均值"
 
-#: superset/assets/src/explore/controls.jsx:2092
+#: superset/assets/src/explore/controls.jsx:2095
 msgid "Aggregate Sum"
 msgstr "合计"
 
-#: superset/assets/src/explore/controls.jsx:2094
+#: superset/assets/src/explore/controls.jsx:2097
 msgid "Sum of values over specified period"
 msgstr "指定周期内的合计"
 
-#: superset/assets/src/explore/controls.jsx:2097
+#: superset/assets/src/explore/controls.jsx:2100
 msgid "Difference"
 msgstr "差异"
 
-#: superset/assets/src/explore/controls.jsx:2099
+#: superset/assets/src/explore/controls.jsx:2102
 msgid "Metric change in value from `since` to `until`"
 msgstr "从“Since”到“Until”值的量度变化"
 
-#: superset/assets/src/explore/controls.jsx:2102
+#: superset/assets/src/explore/controls.jsx:2105
 msgid "Percent Change"
 msgstr "百分比变化"
 
-#: superset/assets/src/explore/controls.jsx:2104
+#: superset/assets/src/explore/controls.jsx:2107
 msgid "Metric percent change in value from `since` to `until`"
 msgstr "度量值从“Since”到“Until”的值变化"
 
-#: superset/assets/src/explore/controls.jsx:2107
+#: superset/assets/src/explore/controls.jsx:2110
 msgid "Factor"
 msgstr "因子"
 
-#: superset/assets/src/explore/controls.jsx:2109
+#: superset/assets/src/explore/controls.jsx:2112
 msgid "Metric factor change from `since` to `until`"
 msgstr "从“Since”到“Until”的度量因子变化"
 
 #: superset/assets/src/explore/controlPanels/sections.jsx:89
-#: superset/assets/src/explore/controls.jsx:2112
+#: superset/assets/src/explore/controls.jsx:2115
 msgid "Advanced Analytics"
 msgstr "高级分析"
 
-#: superset/assets/src/explore/controls.jsx:2114
+#: superset/assets/src/explore/controls.jsx:2117
 msgid "Use the Advanced Analytics options below"
 msgstr "使用下面的高级分析选项"
 
-#: superset/assets/src/explore/controls.jsx:2119
+#: superset/assets/src/explore/controls.jsx:2122
 msgid "Settings for time series"
 msgstr "时间序列的设置"
 
-#: superset/assets/src/explore/controls.jsx:2124
+#: superset/assets/src/explore/controls.jsx:2127
 msgid "Equal Date Sizes"
 msgstr "等时尺寸"
 
-#: superset/assets/src/explore/controls.jsx:2127
+#: superset/assets/src/explore/controls.jsx:2130
 msgid "Check to force date partitions to have the same height"
 msgstr "检查强制日期分区是否具有相同的高度"
 
-#: superset/assets/src/explore/controls.jsx:2132
+#: superset/assets/src/explore/controls.jsx:2135
 msgid "Partition Limit"
 msgstr "分区限制"
 
-#: superset/assets/src/explore/controls.jsx:2136
+#: superset/assets/src/explore/controls.jsx:2139
 msgid ""
 "The maximum number of subdivisions of each group; lower values are pruned"
 " first"
 msgstr "每个组的最大分支数；较低的值首先修剪。"
 
-#: superset/assets/src/explore/controls.jsx:2142
+#: superset/assets/src/explore/controls.jsx:2145
 msgid "Minimum Radius"
 msgstr "最小半径"
 
-#: superset/assets/src/explore/controls.jsx:2148
+#: superset/assets/src/explore/controls.jsx:2151
 msgid ""
 "Minimum radius size of the circle, in pixels. As the zoom level changes, "
 "this insures that the circle respects this minimum radius."
 msgstr "圆的最小半径大小，以像素为单位。随着缩放等级的变化，这保证了圆根据这个最小半径变化。"
 
-#: superset/assets/src/explore/controls.jsx:2154
+#: superset/assets/src/explore/controls.jsx:2157
 msgid "Maximum Radius"
 msgstr "最大半径"
 
-#: superset/assets/src/explore/controls.jsx:2160
+#: superset/assets/src/explore/controls.jsx:2163
 msgid ""
 "Maxium radius size of the circle, in pixels. As the zoom level changes, "
 "this insures that the circle respects this maximum radius."
 msgstr "圆的最大半径大小，以像素为单位。随着缩放等级的变化，这保证了圆根据这个最大半径变化。"
 
-#: superset/assets/src/explore/controls.jsx:2166
+#: superset/assets/src/explore/controls.jsx:2169
 msgid "Partition Threshold"
 msgstr "分割阈值"
 
-#: superset/assets/src/explore/controls.jsx:2170
+#: superset/assets/src/explore/controls.jsx:2173
 msgid ""
 "Partitions whose height to parent height proportions are below this value"
 " are pruned"
 msgstr "将高度与父高度比例低的分区修剪掉"
 
-#: superset/assets/src/explore/controls.jsx:2176
+#: superset/assets/src/explore/controls.jsx:2179
 msgid "Lines column"
 msgstr "线列"
 
-#: superset/assets/src/explore/controls.jsx:2178
+#: superset/assets/src/explore/controls.jsx:2181
 msgid "The database columns that contains lines information"
 msgstr "包含行信息的数据库列"
 
-#: superset/assets/src/explore/controls.jsx:2186
+#: superset/assets/src/explore/controls.jsx:2189
 msgid "Lines encoding"
 msgstr "线编码"
 
-#: superset/assets/src/explore/controls.jsx:2189
+#: superset/assets/src/explore/controls.jsx:2192
 msgid "The encoding format of the lines"
 msgstr "线的编码格式"
 
-#: superset/assets/src/explore/controls.jsx:2199
+#: superset/assets/src/explore/controls.jsx:2202
 msgid "Line width"
 msgstr "线宽"
 
-#: superset/assets/src/explore/controls.jsx:2203
+#: superset/assets/src/explore/controls.jsx:2206
 msgid "The width of the lines"
 msgstr "线宽度"
 
-#: superset/assets/src/explore/controls.jsx:2209
+#: superset/assets/src/explore/controls.jsx:2212
 msgid "Line charts"
 msgstr "线型图"
 
-#: superset/assets/src/explore/controls.jsx:2212
+#: superset/assets/src/explore/controls.jsx:2215
 msgid "Pick a set of line charts to layer on top of one another"
 msgstr "选择一组可重叠的线型图"
 
-#: superset/assets/src/explore/controls.jsx:2214
-#: superset/assets/src/explore/controls.jsx:2232
-#: superset/assets/src/explore/controls.jsx:2263
+#: superset/assets/src/explore/controls.jsx:2217
+#: superset/assets/src/explore/controls.jsx:2235
+#: superset/assets/src/explore/controls.jsx:2266
 msgid "Select charts"
 msgstr "选择图表"
 
-#: superset/assets/src/explore/controls.jsx:2215
-#: superset/assets/src/explore/controls.jsx:2233
-#: superset/assets/src/explore/controls.jsx:2264
+#: superset/assets/src/explore/controls.jsx:2218
+#: superset/assets/src/explore/controls.jsx:2236
+#: superset/assets/src/explore/controls.jsx:2267
 msgid "Error while fetching charts"
 msgstr "获取图表时出错"
 
-#: superset/assets/src/explore/controls.jsx:2227
+#: superset/assets/src/explore/controls.jsx:2230
 msgid "Right Axis chart(s)"
 msgstr "右轴图（S）"
 
-#: superset/assets/src/explore/controls.jsx:2230
+#: superset/assets/src/explore/controls.jsx:2233
 msgid "Choose one or more charts for right axis"
 msgstr "为右轴选择一个或多个图表"
 
-#: superset/assets/src/explore/controls.jsx:2244
+#: superset/assets/src/explore/controls.jsx:2247
 msgid "Prefix metric name with slice name"
 msgstr "前缀度量名"
 
-#: superset/assets/src/explore/controls.jsx:2251
+#: superset/assets/src/explore/controls.jsx:2254
 msgid "Reverse Lat & Long"
 msgstr "反向经纬度"
 
-#: superset/assets/src/explore/controls.jsx:2258
+#: superset/assets/src/explore/controls.jsx:2261
 msgid "deck.gl charts"
 msgstr "Deck.gl - 图表"
 
-#: superset/assets/src/explore/controls.jsx:2261
+#: superset/assets/src/explore/controls.jsx:2264
 msgid "Pick a set of deck.gl charts to layer on top of one another"
 msgstr "选择一组deck.gl图表彼此层叠"
 
-#: superset/assets/src/explore/controls.jsx:2274
+#: superset/assets/src/explore/controls.jsx:2277
 msgid "Javascript data interceptor"
 msgstr "JavaScript数据拦截器"
 
-#: superset/assets/src/explore/controls.jsx:2275
+#: superset/assets/src/explore/controls.jsx:2278
 msgid ""
 "Define a javascript function that receives the data array used in the "
 "visualization and is expected to return a modified version of that array."
@@ -3455,67 +3451,67 @@ msgid ""
 "array."
 msgstr "定义一个JavaScript函数，该函数接收可视化中使用的数组数据，并返回修改版本的数组。这可用于更改数据、筛选或丰富数组的属性。"
 
-#: superset/assets/src/explore/controls.jsx:2281
+#: superset/assets/src/explore/controls.jsx:2284
 msgid "Javascript data mutator"
 msgstr "JavaScript数据调制器"
 
-#: superset/assets/src/explore/controls.jsx:2282
+#: superset/assets/src/explore/controls.jsx:2285
 msgid ""
 "Define a function that receives intercepts the data objects and can "
 "mutate it"
 msgstr "定义一个接收截取数据对象并能对其进行变异的函数。"
 
-#: superset/assets/src/explore/controls.jsx:2286
+#: superset/assets/src/explore/controls.jsx:2289
 msgid "Javascript tooltip generator"
 msgstr "JavaScript工具提示生成器"
 
-#: superset/assets/src/explore/controls.jsx:2287
+#: superset/assets/src/explore/controls.jsx:2290
 msgid ""
 "Define a function that receives the input and outputs the content for a "
 "tooltip"
 msgstr "定义一个函数，接收输入输出工具提示的内容"
 
-#: superset/assets/src/explore/controls.jsx:2291
+#: superset/assets/src/explore/controls.jsx:2294
 msgid "Javascript onClick href"
 msgstr "Javascript onClick事件触发转跳地址"
 
-#: superset/assets/src/explore/controls.jsx:2292
+#: superset/assets/src/explore/controls.jsx:2295
 msgid "Define a function that returns a URL to navigate to when user clicks"
 msgstr "定义一个函数，当用户单击时返回导航URL"
 
-#: superset/assets/src/explore/controls.jsx:2297
+#: superset/assets/src/explore/controls.jsx:2300
 msgid "Extra data for JS"
 msgstr "额外的JS数据"
 
-#: superset/assets/src/explore/controls.jsx:2299
+#: superset/assets/src/explore/controls.jsx:2302
 msgid "List of extra columns made available in Javascript functions"
 msgstr "JavaScript函数中可用的额外列的列表"
 
-#: superset/assets/src/explore/controls.jsx:2304
+#: superset/assets/src/explore/controls.jsx:2307
 msgid "Stroked"
 msgstr "已涂抹"
 
-#: superset/assets/src/explore/controls.jsx:2306
+#: superset/assets/src/explore/controls.jsx:2309
 msgid "Whether to display the stroke"
 msgstr "是否显示笔划"
 
-#: superset/assets/src/explore/controls.jsx:2312
+#: superset/assets/src/explore/controls.jsx:2315
 msgid "Filled"
 msgstr "填充"
 
-#: superset/assets/src/explore/controls.jsx:2314
+#: superset/assets/src/explore/controls.jsx:2317
 msgid "Whether to fill the objects"
 msgstr "是否填充对象"
 
-#: superset/assets/src/explore/controls.jsx:2321
+#: superset/assets/src/explore/controls.jsx:2324
 msgid "Filter configuration for the filter box"
 msgstr "过滤框配置"
 
-#: superset/assets/src/explore/controls.jsx:2329
+#: superset/assets/src/explore/controls.jsx:2332
 msgid "Normalized"
 msgstr "标准化"
 
-#: superset/assets/src/explore/controls.jsx:2331
+#: superset/assets/src/explore/controls.jsx:2334
 msgid "Whether to normalize the histogram"
 msgstr "是否规范化直方图"
 
@@ -5055,6 +5051,10 @@ msgstr "没有找到任何记录"
 msgid "Filter List"
 msgstr "过滤器列表"
 
+#: superset/templates/superset/add_slice.html:22 superset/views/core.py:484
+msgid "Add Chart"
+msgstr "添加图表"
+
 #: superset/templates/superset/import_dashboards.html:21
 #: superset/templates/superset/import_dashboards.html:27
 msgid "Import dashboards"
@@ -5272,20 +5272,13 @@ msgid ""
 " accessed, just leave the list empty"
 msgstr ""
 "JSON包含更多的配置元素：<br/>1. "
-"``engine_params``解包为"
-"[sqlalchemy.create_engine](https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine)"
-"调用，同时``metadata_params``解包为"
-"[sqlalchemy.MetaData](https://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html#sqlalchemy.schema.MetaData)"
-" 调用。<br/>2. ``metadata_cache_timeout``从数据库获取元数据的缓存超时时间（秒）"
-"。设置范例为"
-"**\"metadata_cache_timeout\": {\"schema_cache_timeout\": 600, "
-"\"table_cache_timeout\": 600}**。如未设置，针对此功能不启动缓存"
-"。0代表缓存永不过期。"
-"<br/>3. ``schemas_allowed_for_csv_upload``是一个用半角逗号分隔的"
-"允许CSV上传的模式列表。设置范例为"
-"**\"schemas_allowed_for_csv_upload\": [\"public\", \"csv_upload\"]**。"
-"如果数据库不支持模式，或任何模式均可访问，则列表留空。"
-
+"``engine_params``解包为[sqlalchemy.create_engine](https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine)调用，同时``metadata_params``解包为[sqlalchemy.MetaData](https://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html#sqlalchemy.schema.MetaData)"
+" 调用。<br/>2. "
+"``metadata_cache_timeout``从数据库获取元数据的缓存超时时间（秒）。设置范例为**\"metadata_cache_timeout\":"
+" {\"schema_cache_timeout\": 600, \"table_cache_timeout\": "
+"600}**。如未设置，针对此功能不启动缓存。0代表缓存永不过期。<br/>3. "
+"``schemas_allowed_for_csv_upload``是一个用半角逗号分隔的允许CSV上传的模式列表。设置范例为**\"schemas_allowed_for_csv_upload\":"
+" [\"public\", \"csv_upload\"]**。如果数据库不支持模式，或任何模式均可访问，则列表留空。"
 
 #: superset/views/core.py:262
 msgid ""
@@ -5421,10 +5414,6 @@ msgstr "安全"
 #: superset/views/core.py:483
 msgid "Show Chart"
 msgstr "显示图表"
-
-#: superset/views/core.py:484
-msgid "Add Chart"
-msgstr "添加图表"
 
 #: superset/views/core.py:485
 msgid "Edit Chart"
@@ -6575,4 +6564,7 @@ msgstr "已保存查询"
 
 #~ msgid "It's not a good policy to remove a user, just make it inactive"
 #~ msgstr "删除用户并不是好的策略，可只禁用"
+
+#~ msgid "Last week"
+#~ msgstr "上周"
 
