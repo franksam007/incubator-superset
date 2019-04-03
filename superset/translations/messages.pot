@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-03 11:04+0800\n"
+"POT-Creation-Date: 2019-04-03 21:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid "CSV Files Only!"
 msgstr ""
 
 #: superset/connectors/sqla/views.py:245 superset/connectors/sqla/views.py:246
-#: superset/forms.py:119 superset/views/core.py:284
+#: superset/forms.py:119 superset/views/core.py:286
 #: superset/views/sql_lab.py:41 superset/views/sql_lab.py:78
 msgid "Database"
 msgstr ""
@@ -223,6 +223,7 @@ msgstr ""
 msgid "When using 'Group By' you are limited to use a single metric"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-pivot-table/esm/index.js:18
 #: superset/viz.py:649
 msgid "Pivot Table"
 msgstr ""
@@ -239,6 +240,7 @@ msgstr ""
 msgid "Group By' and 'Columns' can't overlap"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-markup/esm/index.js:18
 #: superset/viz.py:710
 msgid "Markup"
 msgstr ""
@@ -247,22 +249,27 @@ msgstr ""
 msgid "Separator"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-word-cloud/esm/index.js:18
 #: superset/viz.py:744
 msgid "Word Cloud"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-treemap/esm/index.js:18
 #: superset/viz.py:758
 msgid "Treemap"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-calendar/esm/index.js:18
 #: superset/viz.py:784
 msgid "Calendar Heatmap"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/BoxPlot/index.js:18
 #: superset/viz.py:854
 msgid "Box Plot"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Bubble/index.js:18
 #: superset/assets/src/explore/controlPanels/Bubble.js:22 superset/viz.py:939
 msgid "Bubble Chart"
 msgstr ""
@@ -271,6 +278,7 @@ msgstr ""
 msgid "Pick a metric for x, y and size"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Bullet/index.js:18
 #: superset/viz.py:989
 msgid "Bullet Chart"
 msgstr ""
@@ -279,6 +287,7 @@ msgstr ""
 msgid "Pick a metric to display"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-big-number/esm/BigNumber/index.js:18
 #: superset/viz.py:1037
 msgid "Big Number with Trendline"
 msgstr ""
@@ -287,6 +296,7 @@ msgstr ""
 msgid "Pick a metric!"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-big-number/esm/BigNumberTotal/index.js:18
 #: superset/viz.py:1056
 msgid "Big Number"
 msgstr ""
@@ -345,6 +355,7 @@ msgstr ""
 msgid "Distribution - NVD3 - Pie Chart"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-histogram/esm/index.js:18
 #: superset/viz.py:1463
 msgid "Histogram"
 msgstr ""
@@ -391,10 +402,12 @@ msgstr ""
 msgid "Pick exactly 2 columns to 'Group By'"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-country-map/esm/index.js:18
 #: superset/viz.py:1714
 msgid "Country Map"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-world-map/esm/index.js:18
 #: superset/viz.py:1742
 msgid "World Map"
 msgstr ""
@@ -412,10 +425,12 @@ msgstr ""
 msgid "iFrame"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-parallel-coordinates/esm/index.js:18
 #: superset/viz.py:1876
 msgid "Parallel Coordinates"
 msgstr ""
 
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-heatmap/esm/index.js:18
 #: superset/viz.py:1897
 msgid "Heatmap"
 msgstr ""
@@ -514,6 +529,110 @@ msgstr ""
 
 #: superset/viz.py:2631
 msgid "Partition Diagram"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-chord/esm/index.js:18
+msgid "Chord Diagram"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-event-flow/esm/EventFlow.js:18
+msgid "Sorry, there appears to be no data"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-event-flow/esm/index.js:18
+msgid "Event Flow"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-force-directed/esm/index.js:18
+msgid "Force-directed Graph"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-horizon/esm/index.js:18
+msgid "Horizon Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-iframe/esm/index.js:18
+msgid "IFrame"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-map-box/esm/index.js:18
+msgid "MapBox"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-paired-t-test/esm/index.js:18
+msgid "Paired t-test Table"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-partition/esm/index.js:18
+msgid "Partition Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-rose/esm/index.js:18
+msgid "Nightingale Rose Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-sankey/esm/index.js:18
+msgid "Sankey Diagram"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-sunburst/esm/index.js:18
+msgid "Sunburst Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-plugin-chart-table/esm/index.js:18
+#: superset/assets/src/SqlLab/components/ResultSet.jsx:190
+#: superset/connectors/sqla/views.py:102 superset/connectors/sqla/views.py:150
+#: superset/connectors/sqla/views.py:243 superset/views/core.py:532
+msgid "Table"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/NVD3Vis.js:37
+msgid "You cannot use 45xB0 tick layout along with the time range filter"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Area/index.js:18
+msgid "Area Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Bar/index.js:18
+msgid "Time-series Bar Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Compare/index.js:18
+#, python-format
+msgid "A line chart component where you can compare the % change over time"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Compare/index.js:18
+msgid "Time-series Percent Change"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/DistBar/index.js:18
+msgid "A bar chart where the x axis is time"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/DistBar/index.js:18
+msgid "Bar Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/DualLine/index.js:18
+msgid "Dual Line Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Line/index.js:18
+msgid "Line Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/LineMulti/index.js:18
+msgid "Multiple Line Charts"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/Pie/index.js:18
+msgid "Pie Chart"
+msgstr ""
+
+#: superset/assets/node_modules/@superset-ui/legacy-preset-chart-nvd3/esm/TimePivot/index.js:18
+msgid "Time-series Period Pivot"
 msgstr ""
 
 #: superset/assets/src/CRUD/CollectionTable.jsx:231
@@ -752,12 +871,6 @@ msgid "(Request Access)"
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/ResultSet.jsx:190
-#: superset/connectors/sqla/views.py:102 superset/connectors/sqla/views.py:150
-#: superset/connectors/sqla/views.py:243 superset/views/core.py:530
-msgid "Table"
-msgstr ""
-
-#: superset/assets/src/SqlLab/components/ResultSet.jsx:190
 msgid "was created"
 msgstr ""
 
@@ -822,7 +935,7 @@ msgstr ""
 #: superset/connectors/druid/views.py:139
 #: superset/connectors/druid/views.py:286 superset/connectors/sqla/views.py:99
 #: superset/connectors/sqla/views.py:146 superset/connectors/sqla/views.py:257
-#: superset/views/annotations.py:86 superset/views/core.py:524
+#: superset/views/annotations.py:86 superset/views/core.py:526
 #: superset/views/sql_lab.py:79
 msgid "Description"
 msgstr ""
@@ -1124,7 +1237,7 @@ msgid "Copied!"
 msgstr ""
 
 #: superset/assets/src/components/EditableTitle.jsx:37
-#: superset/views/core.py:634 superset/views/core.py:708
+#: superset/views/core.py:641 superset/views/core.py:715
 msgid "Title"
 msgstr ""
 
@@ -1239,8 +1352,8 @@ msgstr ""
 
 #: superset/assets/src/dashboard/components/AddSliceCard.jsx:56
 #: superset/connectors/druid/views.py:296 superset/connectors/sqla/views.py:260
-#: superset/views/core.py:293 superset/views/core.py:639
-#: superset/views/core.py:710 superset/views/sql_lab.py:80
+#: superset/views/core.py:295 superset/views/core.py:646
+#: superset/views/core.py:717 superset/views/sql_lab.py:80
 msgid "Modified"
 msgstr ""
 
@@ -1282,7 +1395,7 @@ msgid "Load a CSS template"
 msgstr ""
 
 #: superset/assets/src/dashboard/components/CssEditor.jsx:83
-#: superset/views/core.py:641
+#: superset/views/core.py:648
 msgid "CSS"
 msgstr ""
 
@@ -1688,7 +1801,7 @@ msgstr ""
 
 #: superset/assets/src/datasource/DatasourceEditor.jsx:400
 #: superset/connectors/druid/views.py:287 superset/connectors/sqla/views.py:255
-#: superset/views/core.py:526 superset/views/core.py:637
+#: superset/views/core.py:528 superset/views/core.py:644
 msgid "Owners"
 msgstr ""
 
@@ -1716,7 +1829,7 @@ msgid ""
 msgstr ""
 
 #: superset/assets/src/datasource/DatasourceEditor.jsx:436
-#: superset/connectors/druid/views.py:142 superset/views/core.py:744
+#: superset/connectors/druid/views.py:142 superset/views/core.py:751
 msgid "JSON"
 msgstr ""
 
@@ -1727,7 +1840,7 @@ msgstr ""
 #: superset/assets/src/datasource/DatasourceEditor.jsx:447
 #: superset/connectors/druid/views.py:184
 #: superset/connectors/druid/views.py:292 superset/connectors/sqla/views.py:252
-#: superset/views/core.py:519
+#: superset/views/core.py:521
 msgid "Cache Timeout"
 msgstr ""
 
@@ -1866,12 +1979,12 @@ msgid "This functionality is disabled in your environment for security reasons."
 msgstr ""
 
 #: superset/assets/src/explore/controls.jsx:228
-#: superset/connectors/druid/views.py:61 superset/views/core.py:464
-#: superset/views/core.py:489 superset/views/core.py:522
+#: superset/connectors/druid/views.py:61 superset/views/core.py:466
+#: superset/views/core.py:491 superset/views/core.py:524
 msgid "Datasource"
 msgstr ""
 
-#: superset/assets/src/explore/controls.jsx:239 superset/views/core.py:531
+#: superset/assets/src/explore/controls.jsx:239 superset/views/core.py:533
 msgid "Visualization Type"
 msgstr ""
 
@@ -3741,7 +3854,7 @@ msgstr ""
 #: superset/assets/src/explore/components/controls/AnnotationLayer.jsx:324
 #: superset/templates/appbuilder/navbar_right.html:33
 #: superset/templates/appbuilder/navbar_right_bak.html:33
-#: superset/views/core.py:528 superset/views/core.py:576
+#: superset/views/core.py:530 superset/views/core.py:583
 #: superset/views/schedules.py:256
 msgid "Chart"
 msgstr ""
@@ -3771,7 +3884,7 @@ msgid "Configure the basics of your Annotation Layer."
 msgstr ""
 
 #: superset/assets/src/explore/components/controls/AnnotationLayer.jsx:629
-#: superset/views/annotations.py:85 superset/views/core.py:529
+#: superset/views/annotations.py:85 superset/views/core.py:531
 msgid "Name"
 msgstr ""
 
@@ -4478,15 +4591,15 @@ msgstr ""
 #: superset/assets/src/profile/components/CreatedContent.jsx:77
 #: superset/assets/src/profile/components/Favorites.jsx:78
 #: superset/assets/src/welcome/Welcome.jsx:46
-#: superset/assets/src/welcome/Welcome.jsx:49 superset/views/core.py:521
-#: superset/views/core.py:599 superset/views/core.py:694
+#: superset/assets/src/welcome/Welcome.jsx:49 superset/views/core.py:523
+#: superset/views/core.py:606 superset/views/core.py:701
 msgid "Dashboards"
 msgstr ""
 
 #: superset/assets/src/profile/components/CreatedContent.jsx:80
 #: superset/assets/src/profile/components/Favorites.jsx:81
-#: superset/views/core.py:482 superset/views/core.py:563
-#: superset/views/core.py:636
+#: superset/views/core.py:484 superset/views/core.py:570
+#: superset/views/core.py:643
 msgid "Charts"
 msgstr ""
 
@@ -4503,7 +4616,7 @@ msgid "Roles"
 msgstr ""
 
 #: superset/assets/src/profile/components/Security.jsx:41
-#: superset/views/core.py:181 superset/views/core.py:350
+#: superset/views/core.py:183 superset/views/core.py:352
 msgid "Databases"
 msgstr ""
 
@@ -4738,7 +4851,7 @@ msgstr ""
 #: superset/connectors/druid/views.py:330
 #: superset/connectors/druid/views.py:382
 #: superset/connectors/druid/views.py:390 superset/connectors/sqla/views.py:350
-#: superset/views/core.py:353 superset/views/core.py:2999
+#: superset/views/core.py:355 superset/views/core.py:3006
 msgid "Sources"
 msgstr ""
 
@@ -4824,7 +4937,7 @@ msgstr ""
 msgid "Time Offset"
 msgstr ""
 
-#: superset/connectors/druid/views.py:293 superset/views/core.py:523
+#: superset/connectors/druid/views.py:293 superset/views/core.py:525
 msgid "Datasource Name"
 msgstr ""
 
@@ -4966,7 +5079,7 @@ msgid ""
 "database timeout if undefined."
 msgstr ""
 
-#: superset/connectors/sqla/views.py:247 superset/views/core.py:286
+#: superset/connectors/sqla/views.py:247 superset/views/core.py:288
 msgid "Last Changed"
 msgstr ""
 
@@ -5052,7 +5165,7 @@ msgstr ""
 
 #: superset/templates/appbuilder/navbar_right.html:34
 #: superset/templates/appbuilder/navbar_right_bak.html:34
-#: superset/views/core.py:633 superset/views/core.py:707
+#: superset/views/core.py:640 superset/views/core.py:714
 #: superset/views/schedules.py:196
 msgid "Dashboard"
 msgstr ""
@@ -5084,7 +5197,7 @@ msgstr ""
 msgid "Filter List"
 msgstr ""
 
-#: superset/templates/superset/add_slice.html:22 superset/views/core.py:484
+#: superset/templates/superset/add_slice.html:22 superset/views/core.py:486
 msgid "Add Chart"
 msgstr ""
 
@@ -5159,7 +5272,7 @@ msgstr ""
 msgid "Long Descr"
 msgstr ""
 
-#: superset/views/annotations.py:48 superset/views/core.py:642
+#: superset/views/annotations.py:48 superset/views/core.py:649
 msgid "JSON Metadata"
 msgstr ""
 
@@ -5182,7 +5295,7 @@ msgid "Annotation Layers"
 msgstr ""
 
 #: superset/views/annotations.py:96 superset/views/annotations.py:104
-#: superset/views/core.py:343 superset/views/core.py:2967
+#: superset/views/core.py:345 superset/views/core.py:2974
 #: superset/views/schedules.py:282 superset/views/schedules.py:290
 #: superset/views/sql_lab.py:53
 msgid "Manage"
@@ -5213,53 +5326,53 @@ msgstr ""
 msgid "Delete all Really?"
 msgstr ""
 
-#: superset/views/core.py:78
+#: superset/views/core.py:80
 msgid "This endpoint requires the `all_datasource_access` permission"
 msgstr ""
 
-#: superset/views/core.py:80
+#: superset/views/core.py:82
 msgid "The data source seems to have been deleted"
 msgstr ""
 
-#: superset/views/core.py:81
+#: superset/views/core.py:83
 msgid "The access requests seem to have been deleted"
 msgstr ""
 
-#: superset/views/core.py:83
+#: superset/views/core.py:85
 msgid "The user seems to have been deleted"
 msgstr ""
 
-#: superset/views/core.py:95
+#: superset/views/core.py:97
 #, python-format
 msgid ""
 "This view requires the database %(name)s or `all_datasource_access` "
 "permission"
 msgstr ""
 
-#: superset/views/core.py:182
+#: superset/views/core.py:184
 msgid "Show Database"
 msgstr ""
 
-#: superset/views/core.py:183
+#: superset/views/core.py:185
 msgid "Add Database"
 msgstr ""
 
-#: superset/views/core.py:184
+#: superset/views/core.py:186
 msgid "Edit Database"
 msgstr ""
 
-#: superset/views/core.py:219
+#: superset/views/core.py:221
 msgid ""
 "Refer to the [SqlAlchemy "
 "docs](https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-"
 "urls) for more information on how to structure your URI."
 msgstr ""
 
-#: superset/views/core.py:225
+#: superset/views/core.py:227
 msgid "Expose this DB in SQL Lab"
 msgstr ""
 
-#: superset/views/core.py:226
+#: superset/views/core.py:228
 msgid ""
 "Operate the database in asynchronous mode, meaning that the queries are "
 "executed on remote workers as opposed to on the web server itself. This "
@@ -5267,23 +5380,23 @@ msgid ""
 " Refer to the installation docs for more information."
 msgstr ""
 
-#: superset/views/core.py:233
+#: superset/views/core.py:235
 msgid "Allow CREATE TABLE AS option in SQL Lab"
 msgstr ""
 
-#: superset/views/core.py:234
+#: superset/views/core.py:236
 msgid ""
 "Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...) in"
 " SQL Lab"
 msgstr ""
 
-#: superset/views/core.py:238
+#: superset/views/core.py:240
 msgid ""
 "When allowing CREATE TABLE AS option in SQL Lab, this option forces the "
 "table to be created in this schema"
 msgstr ""
 
-#: superset/views/core.py:241
+#: superset/views/core.py:243
 msgid ""
 "JSON string containing extra configuration elements.<br/>1. The "
 "``engine_params`` object gets unpacked into the "
@@ -5302,7 +5415,7 @@ msgid ""
 " accessed, just leave the list empty"
 msgstr ""
 
-#: superset/views/core.py:262
+#: superset/views/core.py:264
 msgid ""
 "If Presto, all the queries in SQL Lab are going to be executed as the "
 "currently logged on user who must have permission to run them.<br/>If "
@@ -5311,135 +5424,135 @@ msgid ""
 "hive.server2.proxy.user property."
 msgstr ""
 
-#: superset/views/core.py:268
+#: superset/views/core.py:270
 msgid ""
 "Allow SQL Lab to fetch a list of all tables and all views across all "
 "database schemas. For large data warehouse with thousands of tables, this"
 " can be expensive and put strain on the system."
 msgstr ""
 
-#: superset/views/core.py:272
+#: superset/views/core.py:274
 msgid ""
 "Duration (in seconds) of the caching timeout for charts of this database."
 " A timeout of 0 indicates that the cache never expires. Note this "
 "defaults to the global timeout if undefined."
 msgstr ""
 
-#: superset/views/core.py:276
+#: superset/views/core.py:278
 msgid "If selected, please set the schemas allowed for csv upload in Extra."
 msgstr ""
 
-#: superset/views/core.py:280
+#: superset/views/core.py:282
 msgid "Expose in SQL Lab"
 msgstr ""
 
-#: superset/views/core.py:281
+#: superset/views/core.py:283
 msgid "Allow CREATE TABLE AS"
 msgstr ""
 
-#: superset/views/core.py:282
+#: superset/views/core.py:284
 msgid "Allow DML"
 msgstr ""
 
-#: superset/views/core.py:283
+#: superset/views/core.py:285
 msgid "CTAS Schema"
 msgstr ""
 
-#: superset/views/core.py:285 superset/views/core.py:520
-#: superset/views/core.py:638 superset/views/core.py:709
+#: superset/views/core.py:287 superset/views/core.py:522
+#: superset/views/core.py:645 superset/views/core.py:716
 msgid "Creator"
 msgstr ""
 
-#: superset/views/core.py:287
+#: superset/views/core.py:289
 msgid "SQLAlchemy URI"
 msgstr ""
 
-#: superset/views/core.py:288
+#: superset/views/core.py:290
 msgid "Chart Cache Timeout"
 msgstr ""
 
-#: superset/views/core.py:289
+#: superset/views/core.py:291
 msgid "Extra"
 msgstr ""
 
-#: superset/views/core.py:290
+#: superset/views/core.py:292
 msgid "Asynchronous Query Execution"
 msgstr ""
 
-#: superset/views/core.py:291
+#: superset/views/core.py:293
 msgid "Impersonate the logged on user"
 msgstr ""
 
-#: superset/views/core.py:292
+#: superset/views/core.py:294
 msgid "Allow Csv Upload"
 msgstr ""
 
-#: superset/views/core.py:294
+#: superset/views/core.py:296
 msgid "Allow Multi Schema Metadata Fetch"
 msgstr ""
 
-#: superset/views/core.py:295
+#: superset/views/core.py:297
 msgid "Backend"
 msgstr ""
 
-#: superset/views/core.py:339
+#: superset/views/core.py:341
 msgid "Import Dashboards"
 msgstr ""
 
-#: superset/views/core.py:373
+#: superset/views/core.py:375
 msgid "CSV to Database configuration"
 msgstr ""
 
-#: superset/views/core.py:392
+#: superset/views/core.py:394
 msgid ""
 "Database \"{0}\" Schema \"{1}\" is not allowed for csv uploads. Please "
 "contact Superset Admin"
 msgstr ""
 
-#: superset/views/core.py:425
+#: superset/views/core.py:427
 msgid "CSV file \"{0}\" uploaded to table \"{1}\" in database \"{2}\""
 msgstr ""
 
-#: superset/views/core.py:461 superset/views/core.py:741
+#: superset/views/core.py:463 superset/views/core.py:748
 #: superset/views/schedules.py:199 superset/views/schedules.py:259
 #: superset/views/sql_lab.py:40 superset/views/sql_lab.py:77
 msgid "User"
 msgstr ""
 
-#: superset/views/core.py:462
+#: superset/views/core.py:464
 msgid "User Roles"
 msgstr ""
 
-#: superset/views/core.py:463
+#: superset/views/core.py:465
 msgid "Database URL"
 msgstr ""
 
-#: superset/views/core.py:465
+#: superset/views/core.py:467
 msgid "Roles to grant"
 msgstr ""
 
-#: superset/views/core.py:466 superset/views/schedules.py:197
+#: superset/views/core.py:468 superset/views/schedules.py:197
 #: superset/views/schedules.py:257
 msgid "Created On"
 msgstr ""
 
-#: superset/views/core.py:472
+#: superset/views/core.py:474
 msgid "Access requests"
 msgstr ""
 
-#: superset/views/core.py:474 superset/views/core.py:753
+#: superset/views/core.py:476 superset/views/core.py:760
 msgid "Security"
 msgstr ""
 
-#: superset/views/core.py:483
+#: superset/views/core.py:485
 msgid "Show Chart"
 msgstr ""
 
-#: superset/views/core.py:485
+#: superset/views/core.py:487
 msgid "Edit Chart"
 msgstr ""
 
-#: superset/views/core.py:507
+#: superset/views/core.py:509
 msgid ""
 "These parameters are generated dynamically when clicking the save or "
 "overwrite button in the explore view. This JSON object is exposed here "
@@ -5447,244 +5560,244 @@ msgid ""
 "parameters."
 msgstr ""
 
-#: superset/views/core.py:513
+#: superset/views/core.py:515
 msgid ""
 "Duration (in seconds) of the caching timeout for this chart. Note this "
 "defaults to the datasource/table timeout if undefined."
 msgstr ""
 
-#: superset/views/core.py:525
+#: superset/views/core.py:527
 msgid "Last Modified"
 msgstr ""
 
-#: superset/views/core.py:527
+#: superset/views/core.py:529
 msgid "Parameters"
 msgstr ""
 
-#: superset/views/core.py:600
+#: superset/views/core.py:607
 msgid "Show Dashboard"
 msgstr ""
 
-#: superset/views/core.py:601
+#: superset/views/core.py:608
 msgid "Add Dashboard"
 msgstr ""
 
-#: superset/views/core.py:602
+#: superset/views/core.py:609
 msgid "Edit Dashboard"
 msgstr ""
 
-#: superset/views/core.py:614
+#: superset/views/core.py:621
 msgid ""
 "This json object describes the positioning of the widgets in the "
 "dashboard. It is dynamically generated when adjusting the widgets size "
 "and positions by using drag & drop in the dashboard view"
 msgstr ""
 
-#: superset/views/core.py:619
+#: superset/views/core.py:626
 msgid ""
 "The CSS for individual dashboards can be altered here, or in the "
 "dashboard view where changes are immediately visible"
 msgstr ""
 
-#: superset/views/core.py:623
+#: superset/views/core.py:630
 msgid "To get a readable URL for your dashboard"
 msgstr ""
 
-#: superset/views/core.py:624
+#: superset/views/core.py:631
 msgid ""
 "This JSON object is generated dynamically when clicking the save or "
 "overwrite button in the dashboard view. It is exposed here for reference "
 "and for power users who may want to alter specific parameters."
 msgstr ""
 
-#: superset/views/core.py:629
+#: superset/views/core.py:636
 msgid "Owners is a list of users who can alter the dashboard."
 msgstr ""
 
-#: superset/views/core.py:635
+#: superset/views/core.py:642
 msgid "Slug"
 msgstr ""
 
-#: superset/views/core.py:640
+#: superset/views/core.py:647
 msgid "Position JSON"
 msgstr ""
 
-#: superset/views/core.py:643
+#: superset/views/core.py:650
 msgid "Underlying Tables"
 msgstr ""
 
-#: superset/views/core.py:667
+#: superset/views/core.py:674
 msgid "Export"
 msgstr ""
 
-#: superset/views/core.py:667
+#: superset/views/core.py:674
 msgid "Export dashboards?"
 msgstr ""
 
-#: superset/views/core.py:732
+#: superset/views/core.py:739
 msgid "Logs"
 msgstr ""
 
-#: superset/views/core.py:733
+#: superset/views/core.py:740
 msgid "Show Log"
 msgstr ""
 
-#: superset/views/core.py:734
+#: superset/views/core.py:741
 msgid "Add Log"
 msgstr ""
 
-#: superset/views/core.py:735
+#: superset/views/core.py:742
 msgid "Edit Log"
 msgstr ""
 
-#: superset/views/core.py:742
+#: superset/views/core.py:749
 msgid "Action"
 msgstr ""
 
-#: superset/views/core.py:743
+#: superset/views/core.py:750
 msgid "dttm"
 msgstr ""
 
-#: superset/views/core.py:751
+#: superset/views/core.py:758
 msgid "Action Log"
 msgstr ""
 
-#: superset/views/core.py:944
+#: superset/views/core.py:951
 msgid "Access was requested"
 msgstr ""
 
-#: superset/views/core.py:1007
+#: superset/views/core.py:1014
 #, python-format
 msgid ""
 "%(user)s was granted the role %(role)s that gives access to the "
 "%(datasource)s"
 msgstr ""
 
-#: superset/views/core.py:1023
+#: superset/views/core.py:1030
 #, python-format
 msgid "Role %(r)s was extended to provide the access to the datasource %(ds)s"
 msgstr ""
 
-#: superset/views/core.py:1032
+#: superset/views/core.py:1039
 msgid "You have no permission to approve this request"
 msgstr ""
 
-#: superset/views/core.py:1361 superset/views/core.py:1366
-#: superset/views/core.py:1473 superset/views/core.py:1487
+#: superset/views/core.py:1368 superset/views/core.py:1373
+#: superset/views/core.py:1480 superset/views/core.py:1494
 msgid "You don't have the rights to "
 msgstr ""
 
-#: superset/views/core.py:1361 superset/views/core.py:1473
+#: superset/views/core.py:1368 superset/views/core.py:1480
 msgid "alter this "
 msgstr ""
 
-#: superset/views/core.py:1361 superset/views/core.py:1366
+#: superset/views/core.py:1368 superset/views/core.py:1373
 msgid "chart"
 msgstr ""
 
-#: superset/views/core.py:1366 superset/views/core.py:1487
+#: superset/views/core.py:1373 superset/views/core.py:1494
 msgid "create a "
 msgstr ""
 
-#: superset/views/core.py:1400
+#: superset/views/core.py:1407
 #, python-format
 msgid "Explore - %(table)s"
 msgstr ""
 
-#: superset/views/core.py:1474 superset/views/core.py:1487
+#: superset/views/core.py:1481 superset/views/core.py:1494
 msgid "dashboard"
 msgstr ""
 
-#: superset/views/core.py:1478
+#: superset/views/core.py:1485
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr ""
 
-#: superset/views/core.py:1494
+#: superset/views/core.py:1501
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr ""
 
-#: superset/views/core.py:1519
+#: superset/views/core.py:1526
 msgid "Chart [{}] has been saved"
 msgstr ""
 
-#: superset/views/core.py:1528
+#: superset/views/core.py:1535
 msgid "Chart [{}] has been overwritten"
 msgstr ""
 
-#: superset/views/core.py:2100
+#: superset/views/core.py:2107
 msgid ""
 "Malformed request. slice_id or table_name and db_name arguments are "
 "expected"
 msgstr ""
 
-#: superset/views/core.py:2106
+#: superset/views/core.py:2113
 #, python-format
 msgid "Chart %(id)s not found"
 msgstr ""
 
-#: superset/views/core.py:2118
+#: superset/views/core.py:2125
 #, python-format
 msgid "Table %(t)s wasn't found in the database %(d)s"
 msgstr ""
 
-#: superset/views/core.py:2288
+#: superset/views/core.py:2295
 #, python-format
 msgid "Can't find User '%(name)s', please ask your admin to create one."
 msgstr ""
 
-#: superset/views/core.py:2295
+#: superset/views/core.py:2302
 #, python-format
 msgid "Can't find DruidCluster with cluster_name = '%(name)s'"
 msgstr ""
 
-#: superset/views/core.py:2582
+#: superset/views/core.py:2589
 msgid "Query record was not created as expected."
 msgstr ""
 
-#: superset/views/core.py:2609
+#: superset/views/core.py:2616
 msgid ""
 "Failed to start remote query on a worker. Tell your administrator to "
 "verify the availability of the message queue."
 msgstr ""
 
-#: superset/views/core.py:2866
+#: superset/views/core.py:2873
 #, python-format
 msgid "%(user)s's profile"
 msgstr ""
 
-#: superset/views/core.py:2943 superset/views/core.py:2964
+#: superset/views/core.py:2950 superset/views/core.py:2971
 msgid "CSS Templates"
 msgstr ""
 
-#: superset/views/core.py:2944
+#: superset/views/core.py:2951
 msgid "Show CSS Template"
 msgstr ""
 
-#: superset/views/core.py:2945
+#: superset/views/core.py:2952
 msgid "Add CSS Template"
 msgstr ""
 
-#: superset/views/core.py:2946
+#: superset/views/core.py:2953
 msgid "Edit CSS Template"
 msgstr ""
 
-#: superset/views/core.py:2952
+#: superset/views/core.py:2959
 msgid "Template Name"
 msgstr ""
 
-#: superset/views/core.py:2975
+#: superset/views/core.py:2982
 msgid "SQL Editor"
 msgstr ""
 
-#: superset/views/core.py:2980 superset/views/core.py:2990
+#: superset/views/core.py:2987 superset/views/core.py:2997
 msgid "SQL Lab"
 msgstr ""
 
-#: superset/views/core.py:2985
+#: superset/views/core.py:2992
 msgid "Query Search"
 msgstr ""
 
-#: superset/views/core.py:2995
+#: superset/views/core.py:3002
 msgid "Upload a CSV"
 msgstr ""
 
