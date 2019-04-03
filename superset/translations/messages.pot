@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-02 12:01+0800\n"
+"POT-Creation-Date: 2019-04-03 11:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -568,7 +568,7 @@ msgstr ""
 
 #: superset/assets/src/SqlLab/components/ExploreResultsButton.jsx:58
 #: superset/assets/src/SqlLab/components/ExploreResultsButton.jsx:73
-#: superset/assets/src/SqlLab/components/ExploreResultsButton.jsx:198
+#: superset/assets/src/SqlLab/components/ExploreResultsButton.jsx:194
 msgid "Explore"
 msgstr ""
 
@@ -626,7 +626,7 @@ msgid ""
 "          "
 msgstr ""
 
-#: superset/assets/src/SqlLab/components/ExploreResultsButton.jsx:191
+#: superset/assets/src/SqlLab/components/ExploreResultsButton.jsx:192
 msgid "Explore the result set in the data exploration view"
 msgstr ""
 
@@ -641,6 +641,15 @@ msgstr ""
 #: superset/assets/src/SqlLab/components/HighlightedSql.jsx:100
 #: superset/assets/src/datasource/DatasourceEditor.jsx:425
 msgid "SQL"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/LimitControl.jsx:79
+msgid "Row limit must be positive integer"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/LimitControl.jsx:80
+#, python-format
+msgid " and not greater than %s"
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/LimitControl.jsx:85
@@ -692,7 +701,7 @@ msgstr ""
 
 #: superset/assets/src/SqlLab/components/QuerySearch.jsx:258
 #: superset/assets/src/explore/components/DisplayQueryButton.jsx:164
-#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:190
+#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:179
 msgid "Search"
 msgstr ""
 
@@ -754,6 +763,10 @@ msgstr ""
 
 #: superset/assets/src/SqlLab/components/ResultSet.jsx:197
 msgid "Query in a new tab"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/ResultSet.jsx:223
+msgid "The query returned no data"
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/ResultSet.jsx:233
@@ -838,6 +851,11 @@ msgstr ""
 msgid "Save Query"
 msgstr ""
 
+#: superset/assets/src/SqlLab/components/ShareSqlLabQuery.jsx:45
+#: superset/assets/src/SqlLab/components/ShareSqlLabQuery.jsx:72
+msgid "Loading ..."
+msgstr ""
+
 #: superset/assets/src/SqlLab/components/ShareSqlLabQuery.jsx:63
 msgid "Error"
 msgstr ""
@@ -871,12 +889,37 @@ msgstr ""
 msgid "Query History"
 msgstr ""
 
+#: superset/assets/src/SqlLab/components/SqlEditor.jsx:147
+#: superset/assets/src/SqlLab/components/SqlEditor.jsx:153
+msgid "Run query"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/SqlEditor.jsx:159
+msgid "New tab"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/SqlEditor.jsx:171
+msgid "Stop query"
+msgstr ""
+
 #: superset/assets/src/SqlLab/components/SqlEditor.jsx:260
 msgid "Create table as with query results"
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/SqlEditor.jsx:268
 msgid "new table name"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/SqlEditor.jsx:290
+#, python-format
+msgid ""
+"It appears that the number of rows in the query results displayed\n"
+"           was limited on the server side to\n"
+"           the %s limit."
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/SqlEditor.jsx:344
+msgid "Keyboard shortcuts"
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/SqlEditorLeftBar.jsx:130
@@ -945,15 +988,31 @@ msgstr ""
 msgid "Remove table preview"
 msgstr ""
 
-#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:120
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:82
+msgid "Assign a set of parameters as"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:84
+msgid "below (example:"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:86
+msgid "), and they become available in your SQL (example:"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:88
+msgid ") by using"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:122
 msgid "Template Parameters"
 msgstr ""
 
-#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:124
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:126
 msgid "Edit template parameters"
 msgstr ""
 
-#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:134
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:136
 msgid "Invalid JSON"
 msgstr ""
 
@@ -3895,11 +3954,15 @@ msgstr ""
 msgid "in modal"
 msgstr ""
 
-#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:167
+#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:151
 msgid "Click to change visualization type"
 msgstr ""
 
-#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:182
+#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:159
+msgid "This visualization type is not supported."
+msgstr ""
+
+#: superset/assets/src/explore/components/controls/VizTypeControl.jsx:171
 msgid "Select a visualization type"
 msgstr ""
 
