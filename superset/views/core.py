@@ -33,6 +33,7 @@ from flask_appbuilder.models.sqla.interface import SQLAInterface
 from flask_appbuilder.security.decorators import has_access, has_access_api
 from flask_babel import gettext as __
 from flask_babel import lazy_gettext as _
+from flask_babel import get_locale
 import pandas as pd
 import simplejson as json
 import sqlalchemy as sqla
@@ -59,6 +60,7 @@ from superset.sql_parse import ParsedQuery
 from superset.utils import core as utils
 from superset.utils import dashboard_import_export
 from superset.utils.dates import now_as_float
+from superset.translations.utils import get_language_pack
 from .base import (
     api, BaseSupersetView,
     check_ownership,
@@ -549,10 +551,15 @@ class SliceModelView(SupersetModelView, DeleteMixin):  # noqa
             {'value': str(d.id) + '__' + d.type, 'label': repr(d)}
             for d in datasources
         ]
+        locale = str(get_locale())
         return self.render_template(
             'superset/add_slice.html',
             bootstrap_data=json.dumps({
                 'datasources': sorted(datasources, key=lambda d: d['label']),
+                'common': {
+                    'locale': locale,
+                    'language_pack': get_language_pack(locale),
+                }
             }),
         )
 
