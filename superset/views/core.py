@@ -219,11 +219,9 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
     base_order = ('changed_on', 'desc')
     description_columns = {
         'sqlalchemy_uri': utils.markdown(_(
-            'Refer to the '
-            '[SqlAlchemy docs]'
-            '(https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#'
-            'database-urls) '
-            'for more information on how to structure your URI.'), True),
+            'Refer to the [SqlAlchemy '
+            'docs](https://docs.sqlalchemy.org/en/rel_1_2/core/engines.html#database-'
+            'urls) for more information on how to structure your URI.'), True),
         'expose_in_sqllab': _('Expose this DB in SQL Lab'),
         'allow_run_async': _(
             'Operate the database in asynchronous mode, meaning '
@@ -241,26 +239,21 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
             'When allowing CREATE TABLE AS option in SQL Lab, '
             'this option forces the table to be created in this schema'),
         'extra': utils.markdown(_(
-            'JSON string containing extra configuration elements.<br/>'
-            '1. The ``engine_params`` object gets unpacked into the '
-            '[sqlalchemy.create_engine]'
-            '(https://docs.sqlalchemy.org/en/latest/core/engines.html#'
-            'sqlalchemy.create_engine) call, while the ``metadata_params`` '
-            'gets unpacked into the [sqlalchemy.MetaData]'
-            '(https://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html'
-            '#sqlalchemy.schema.MetaData) call.<br/>'
-            '2. The ``metadata_cache_timeout`` is a cache timeout setting '
+            'JSON string containing extra configuration elements.<br/>1. The '
+            '``engine_params`` object gets unpacked into the '
+            '[sqlalchemy.create_engine](https://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine)'
+            ' call, while the ``metadata_params`` gets unpacked into the '
+            '[sqlalchemy.MetaData](https://docs.sqlalchemy.org/en/rel_1_0/core/metadata.html#sqlalchemy.schema.MetaData)'
+            ' call.<br/>2. The ``metadata_cache_timeout`` is a cache timeout setting '
             'in seconds for metadata fetch of this database. Specify it as '
-            '**"metadata_cache_timeout": {"schema_cache_timeout": 600, '
-            '"table_cache_timeout": 600}**. '
-            'If unset, cache will not be enabled for the functionality. '
-            'A timeout of 0 indicates that the cache never expires.<br/>'
-            '3. The ``schemas_allowed_for_csv_upload`` is a comma separated list '
-            'of schemas that CSVs are allowed to upload to. '
-            'Specify it as **"schemas_allowed_for_csv_upload": '
-            '["public", "csv_upload"]**. '
-            'If database flavor does not support schema or any schema is allowed '
-            'to be accessed, just leave the list empty'), True),
+            '**\"metadata_cache_timeout\": {\"schema_cache_timeout\": 600, '
+            '\"table_cache_timeout\": 600}**. If unset, cache will not be enabled for '
+            'the functionality. A timeout of 0 indicates that the cache never '
+            'expires.<br/>3. The ``schemas_allowed_for_csv_upload`` is a comma '
+            'separated list of schemas that CSVs are allowed to upload to. Specify it '
+            'as **\"schemas_allowed_for_csv_upload\": [\"public\", \"csv_upload\"]**. '
+            'If database flavor does not support schema or any schema is allowed to be'
+            ' accessed, just leave the list empty'), True),
         'impersonate_user': _(
             'If Presto, all the queries in SQL Lab are going to be executed as the '
             'currently logged on user who must have permission to run them.<br/>'
@@ -286,6 +279,10 @@ class DatabaseView(SupersetModelView, DeleteMixin, YamlExportMixin):  # noqa
         'database_name': _('Database'),
         'creator': _('Creator'),
         'changed_on_': _('Last Changed'),
+        'created_on': _('Created On'),
+        'changed_on': _('Changed On'),
+        'verbose_name': _('Verbose Name'),
+        'perm': _('Perm'),
         'sqlalchemy_uri': _('SQLAlchemy URI'),
         'cache_timeout': _('Chart Cache Timeout'),
         'extra': _('Extra'),

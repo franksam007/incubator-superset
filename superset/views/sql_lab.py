@@ -36,12 +36,34 @@ class QueryView(SupersetModelView):
     edit_title = _('Edit Query')
 
     list_columns = ['user', 'database', 'status', 'start_time', 'end_time']
+    search_columns = ['user', 'database', 'status', 'changed_on']
     label_columns = {
         'user': _('User'),
         'database': _('Database'),
         'status': _('Status'),
         'start_time': _('Start Time'),
         'end_time': _('End Time'),
+        'extra_json': _('Extra Json'),
+        'client_id': _('Client Id'),
+        'changed_on': _('Changed On'),
+        'tmp_table_name': _('Tmp Table Name'),
+        'tab_name': _('Tab Name'),
+        'sql_editor_id': _('Sql Editor Id'),
+        'schema': _('Schema'),
+        'sql': _('Sql'),
+        'select_sql': _('Select Sql'),
+        'executed_sql': _('Executed Sql'),
+        'limit': _('Limit'),
+        'limit_used': _('Limit Used'),
+        'select_as_cta': _('Select As Cta'),
+        'select_as_cta_used': _('Select As Cta Used'),
+        'progress': _('Progress'),
+        'rows': _('Rows'),
+        'error_message': _('Error Message'),
+        'results_key': _('Results Key'),
+        'start_running_time': _('Start Running Time'),
+        'end_result_backend_time': _('End Result Backend Time'),
+        'tracking_url': _('Tracking Url'),
     }
 
 
