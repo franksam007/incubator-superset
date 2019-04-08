@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-04 18:03+0800\n"
+"POT-Creation-Date: 2019-04-08 16:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -825,6 +825,39 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "State"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "db"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "user"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "time"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "progress"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+#: superset/assets/src/explore/components/RowCountLabel.jsx:35
+msgid "rows"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "sql"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "querylink"
+msgstr ""
+
 #: superset/assets/src/SqlLab/components/QueryTable.jsx:65
 #: superset/assets/src/SqlLab/components/SqlEditor.jsx:163
 #: superset/assets/src/SqlLab/reducers/getInitialState.js:26
@@ -897,10 +930,12 @@ msgstr ""
 
 #: superset/assets/src/SqlLab/components/RunQueryActionButton.jsx:40
 #: superset/assets/src/components/RefreshChartOverlay.jsx:43
+#: superset/assets/src/explore/components/QueryAndSaveBtns.jsx:71
 msgid "Run Query"
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/RunQueryActionButton.jsx:56
+#: superset/assets/src/explore/components/QueryAndSaveBtns.jsx:62
 msgid "Stop"
 msgstr ""
 
@@ -936,7 +971,7 @@ msgstr ""
 #: superset/connectors/druid/views.py:139
 #: superset/connectors/druid/views.py:286 superset/connectors/sqla/views.py:99
 #: superset/connectors/sqla/views.py:146 superset/connectors/sqla/views.py:257
-#: superset/views/annotations.py:86 superset/views/core.py:523
+#: superset/views/annotations.py:88 superset/views/core.py:523
 #: superset/views/sql_lab.py:101
 msgid "Description"
 msgstr ""
@@ -948,6 +983,7 @@ msgstr ""
 #: superset/assets/src/SqlLab/components/SaveQuery.jsx:132
 #: superset/assets/src/dashboard/components/SaveModal.jsx:176
 #: superset/assets/src/datasource/DatasourceModal.jsx:174
+#: superset/assets/src/explore/components/QueryAndSaveBtns.jsx:86
 #: superset/assets/src/explore/components/SaveModal.jsx:241
 msgid "Save"
 msgstr ""
@@ -1116,6 +1152,14 @@ msgstr ""
 
 #: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:88
 msgid ") by using"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:94
+msgid "Jinja templating"
+msgstr ""
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:95
+msgid "syntax."
 msgstr ""
 
 #: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:122
@@ -3799,10 +3843,6 @@ msgstr ""
 msgid "Edit chart properties"
 msgstr ""
 
-#: superset/assets/src/explore/components/RowCountLabel.jsx:35
-msgid "rows"
-msgstr ""
-
 #: superset/assets/src/explore/components/RowCountLabel.jsx:45
 msgid "Limit reached"
 msgstr ""
@@ -3885,7 +3925,7 @@ msgid "Configure the basics of your Annotation Layer."
 msgstr ""
 
 #: superset/assets/src/explore/components/controls/AnnotationLayer.jsx:629
-#: superset/views/annotations.py:85 superset/views/core.py:528
+#: superset/views/annotations.py:87 superset/views/core.py:528
 msgid "Name"
 msgstr ""
 
@@ -3919,13 +3959,13 @@ msgid "OK"
 msgstr ""
 
 #: superset/assets/src/explore/components/controls/AnnotationLayerControl.jsx:94
-#: superset/views/annotations.py:78
+#: superset/views/annotations.py:79
 msgid "Edit Annotation Layer"
 msgstr ""
 
 #: superset/assets/src/explore/components/controls/AnnotationLayerControl.jsx:94
 #: superset/assets/src/explore/components/controls/AnnotationLayerControl.jsx:163
-#: superset/views/annotations.py:77
+#: superset/views/annotations.py:78
 msgid "Add Annotation Layer"
 msgstr ""
 
@@ -5253,56 +5293,56 @@ msgstr ""
 msgid "Edit Annotation"
 msgstr ""
 
-#: superset/views/annotations.py:43
+#: superset/views/annotations.py:44
 msgid "Layer"
 msgstr ""
 
-#: superset/views/annotations.py:44
+#: superset/views/annotations.py:45
 msgid "Short Descr"
 msgstr ""
 
-#: superset/views/annotations.py:45
+#: superset/views/annotations.py:46
 msgid "Start Dttm"
 msgstr ""
 
-#: superset/views/annotations.py:46
+#: superset/views/annotations.py:47
 msgid "End Dttm"
 msgstr ""
 
-#: superset/views/annotations.py:47
+#: superset/views/annotations.py:48
 msgid "Long Descr"
 msgstr ""
 
-#: superset/views/annotations.py:48 superset/views/core.py:646
+#: superset/views/annotations.py:49 superset/views/core.py:646
 msgid "JSON Metadata"
 msgstr ""
 
-#: superset/views/annotations.py:52
+#: superset/views/annotations.py:53
 msgid ""
 "This JSON represents any additional metadata this          annotation "
 "needs to add more context."
 msgstr ""
 
-#: superset/views/annotations.py:75
+#: superset/views/annotations.py:76
 msgid "List Annotation Layer"
 msgstr ""
 
-#: superset/views/annotations.py:76
+#: superset/views/annotations.py:77
 msgid "Show Annotation Layer"
 msgstr ""
 
-#: superset/views/annotations.py:93
+#: superset/views/annotations.py:95
 msgid "Annotation Layers"
 msgstr ""
 
-#: superset/views/annotations.py:96 superset/views/annotations.py:104
+#: superset/views/annotations.py:98 superset/views/annotations.py:106
 #: superset/views/core.py:342 superset/views/core.py:2971
 #: superset/views/schedules.py:282 superset/views/schedules.py:290
 #: superset/views/sql_lab.py:75
 msgid "Manage"
 msgstr ""
 
-#: superset/views/annotations.py:101
+#: superset/views/annotations.py:103
 msgid "Annotations"
 msgstr ""
 

@@ -38,6 +38,7 @@ class AnnotationModelView(SupersetModelView, DeleteMixin):  # noqa
         'json_metadata']
 
     add_columns = edit_columns
+    search_columns = list_columns
 
     label_columns = {
         'layer': _('Layer'),
@@ -80,6 +81,7 @@ class AnnotationLayerModelView(SupersetModelView, DeleteMixin):
     list_columns = ['id', 'name']
     edit_columns = ['name', 'descr']
     add_columns = edit_columns
+    search_columns = edit_columns
 
     label_columns = {
         'name': _('Name'),

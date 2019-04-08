@@ -611,7 +611,7 @@ class DashboardModelView(SupersetModelView, DeleteMixin):  # noqa
         'dashboard_title', 'slug', 'owners', 'position_json', 'css',
         'json_metadata']
     show_columns = edit_columns + ['table_names', 'charts']
-    search_columns = ('dashboard_title', 'slug', 'owners')
+    search_columns = ('dashboard_title', 'owners')
     add_columns = edit_columns
     base_order = ('changed_on', 'desc')
     description_columns = {

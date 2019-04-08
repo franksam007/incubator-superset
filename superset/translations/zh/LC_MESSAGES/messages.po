@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apache Superset 0.22.1\n"
 "Report-Msgid-Bugs-To: zhouyao94@qq.com\n"
-"POT-Creation-Date: 2019-04-04 18:03+0800\n"
+"POT-Creation-Date: 2019-04-08 16:24+0800\n"
 "PO-Revision-Date: 2019-01-04 22:19+0800\n"
 "Last-Translator: \n"
 "Language: zh\n"
@@ -841,6 +841,39 @@ msgstr "以状态过滤"
 msgid "Search"
 msgstr "搜索"
 
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "State"
+msgstr "状态"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "db"
+msgstr "数据库"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "user"
+msgstr "用户"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "time"
+msgstr "时间"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "progress"
+msgstr "进度"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+#: superset/assets/src/explore/components/RowCountLabel.jsx:35
+msgid "rows"
+msgstr "行"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "sql"
+msgstr "查询语句"
+
+#: superset/assets/src/SqlLab/components/QuerySearch.jsx:268
+msgid "querylink"
+msgstr "查询链接"
+
 #: superset/assets/src/SqlLab/components/QueryTable.jsx:65
 #: superset/assets/src/SqlLab/components/SqlEditor.jsx:163
 #: superset/assets/src/SqlLab/reducers/getInitialState.js:26
@@ -913,10 +946,12 @@ msgstr "运行选定的查询"
 
 #: superset/assets/src/SqlLab/components/RunQueryActionButton.jsx:40
 #: superset/assets/src/components/RefreshChartOverlay.jsx:43
+#: superset/assets/src/explore/components/QueryAndSaveBtns.jsx:71
 msgid "Run Query"
 msgstr "运行查询"
 
 #: superset/assets/src/SqlLab/components/RunQueryActionButton.jsx:56
+#: superset/assets/src/explore/components/QueryAndSaveBtns.jsx:62
 msgid "Stop"
 msgstr "停止"
 
@@ -952,7 +987,7 @@ msgstr "为您的查询设置标签"
 #: superset/connectors/druid/views.py:139
 #: superset/connectors/druid/views.py:286 superset/connectors/sqla/views.py:99
 #: superset/connectors/sqla/views.py:146 superset/connectors/sqla/views.py:257
-#: superset/views/annotations.py:86 superset/views/core.py:523
+#: superset/views/annotations.py:88 superset/views/core.py:523
 #: superset/views/sql_lab.py:101
 msgid "Description"
 msgstr "描述"
@@ -964,6 +999,7 @@ msgstr "为您的查询写一段描述"
 #: superset/assets/src/SqlLab/components/SaveQuery.jsx:132
 #: superset/assets/src/dashboard/components/SaveModal.jsx:176
 #: superset/assets/src/datasource/DatasourceModal.jsx:174
+#: superset/assets/src/explore/components/QueryAndSaveBtns.jsx:86
 #: superset/assets/src/explore/components/SaveModal.jsx:241
 msgid "Save"
 msgstr "保存"
@@ -1133,6 +1169,14 @@ msgstr "，这些参数将在SQL中可用（例如："
 #: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:88
 msgid ") by using"
 msgstr "）"
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:94
+msgid "Jinja templating"
+msgstr "Jinja模板"
+
+#: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:95
+msgid "syntax."
+msgstr "语法"
 
 #: superset/assets/src/SqlLab/components/TemplateParamsEditor.jsx:122
 msgid "Template Parameters"
@@ -3823,10 +3867,6 @@ msgstr "%s  - 无标题"
 msgid "Edit chart properties"
 msgstr "编辑图表属性"
 
-#: superset/assets/src/explore/components/RowCountLabel.jsx:35
-msgid "rows"
-msgstr "行"
-
 #: superset/assets/src/explore/components/RowCountLabel.jsx:45
 msgid "Limit reached"
 msgstr "达到限制"
@@ -3909,7 +3949,7 @@ msgid "Configure the basics of your Annotation Layer."
 msgstr "配置注释曾的基本信息"
 
 #: superset/assets/src/explore/components/controls/AnnotationLayer.jsx:629
-#: superset/views/annotations.py:85 superset/views/core.py:528
+#: superset/views/annotations.py:87 superset/views/core.py:528
 msgid "Name"
 msgstr "名字"
 
@@ -3943,13 +3983,13 @@ msgid "OK"
 msgstr "OK"
 
 #: superset/assets/src/explore/components/controls/AnnotationLayerControl.jsx:94
-#: superset/views/annotations.py:78
+#: superset/views/annotations.py:79
 msgid "Edit Annotation Layer"
 msgstr "编辑注释层"
 
 #: superset/assets/src/explore/components/controls/AnnotationLayerControl.jsx:94
 #: superset/assets/src/explore/components/controls/AnnotationLayerControl.jsx:163
-#: superset/views/annotations.py:77
+#: superset/views/annotations.py:78
 msgid "Add Annotation Layer"
 msgstr "添加注释层"
 
@@ -5283,56 +5323,56 @@ msgstr "添加注释"
 msgid "Edit Annotation"
 msgstr "编辑注释"
 
-#: superset/views/annotations.py:43
+#: superset/views/annotations.py:44
 msgid "Layer"
 msgstr "图层"
 
-#: superset/views/annotations.py:44
+#: superset/views/annotations.py:45
 msgid "Short Descr"
 msgstr "短描述"
 
-#: superset/views/annotations.py:45
+#: superset/views/annotations.py:46
 msgid "Start Dttm"
 msgstr "起始日期时间"
 
-#: superset/views/annotations.py:46
+#: superset/views/annotations.py:47
 msgid "End Dttm"
 msgstr "终止日期时间"
 
-#: superset/views/annotations.py:47
+#: superset/views/annotations.py:48
 msgid "Long Descr"
 msgstr "长描述"
 
-#: superset/views/annotations.py:48 superset/views/core.py:646
+#: superset/views/annotations.py:49 superset/views/core.py:646
 msgid "JSON Metadata"
 msgstr "JSON元数据"
 
-#: superset/views/annotations.py:52
+#: superset/views/annotations.py:53
 msgid ""
 "This JSON represents any additional metadata this          annotation "
 "needs to add more context."
 msgstr "JSON表示任何需要增加更多上下文注释的元数据"
 
-#: superset/views/annotations.py:75
+#: superset/views/annotations.py:76
 msgid "List Annotation Layer"
 msgstr "注释层列表"
 
-#: superset/views/annotations.py:76
+#: superset/views/annotations.py:77
 msgid "Show Annotation Layer"
 msgstr "显示注释层"
 
-#: superset/views/annotations.py:93
+#: superset/views/annotations.py:95
 msgid "Annotation Layers"
 msgstr "注解层"
 
-#: superset/views/annotations.py:96 superset/views/annotations.py:104
+#: superset/views/annotations.py:98 superset/views/annotations.py:106
 #: superset/views/core.py:342 superset/views/core.py:2971
 #: superset/views/schedules.py:282 superset/views/schedules.py:290
 #: superset/views/sql_lab.py:75
 msgid "Manage"
 msgstr "管理"
 
-#: superset/views/annotations.py:101
+#: superset/views/annotations.py:103
 msgid "Annotations"
 msgstr "注解"
 
@@ -6825,4 +6865,7 @@ msgstr "已保存查询"
 
 #~ msgid "Last week"
 #~ msgstr "上周"
+
+#~ msgid "Test"
+#~ msgstr ""
 
