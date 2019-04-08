@@ -265,7 +265,19 @@ class QuerySearch extends React.PureComponent {
           ) : (
             <div className="scrollbar-content" style={{ height: this.props.height }}>
               <QueryTable
-                columns={[t('State'), t('db'), t('user'), t('time'), t('progress'), t('rows'), t('sql'), t('querylink')]}
+                //columns={[t('State'), t('db'), t('user'), t('time'), t('progress'), t('rows'), t('sql'), t('querylink')]}
+                columns={
+                  [
+                    {key: 'State', label: t('State')},
+                    {key: 'db', label: t('db')},
+                    {key: 'user', label: t('user')},
+                    {key: 'time', lable: t('time')},
+                    {key: 'progress', label: t('progress')},
+                    {key: 'rows', label: t('rows')},
+                    {key: 'sql', label: t('sql')},
+                    {key: 'querylink', label: t('querylink')}
+                  ]
+                }
                 onUserClicked={this.onUserClicked}
                 onDbClicked={this.onDbClicked}
                 queries={this.state.queriesArray}
