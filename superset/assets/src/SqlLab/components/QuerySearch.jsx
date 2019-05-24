@@ -271,7 +271,7 @@ class QuerySearch extends React.PureComponent {
                     {key: 'State', label: t('State')},
                     {key: 'db', label: t('db')},
                     {key: 'user', label: t('user')},
-                    {key: 'time', lable: t('time')},
+                    {key: 'time', label: t('time')},
                     {key: 'progress', label: t('progress')},
                     {key: 'rows', label: t('rows')},
                     {key: 'sql', label: t('sql')},
