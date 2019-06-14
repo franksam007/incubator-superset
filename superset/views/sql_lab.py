@@ -60,6 +60,7 @@ class QueryView(SupersetModelView):
     edit_title = _('Edit Query')
 
     list_columns = ['username', 'database_name', 'status', 'start_time', 'end_time']
+    order_columns = ['status', 'start_time', 'end_time']
     base_filters = [['id', QueryFilter, lambda: []]]
     label_columns = {
         'user': _('User'),
@@ -112,6 +113,9 @@ class SavedQueryView(SupersetModelView, DeleteMixin):
     list_columns = [
         'label', 'user', 'database', 'schema', 'description',
         'modified', 'pop_tab_link']
+    order_columns = [
+        'label', 'schema', 'description',
+        'modified']
     show_columns = [
         'id', 'label', 'user', 'database',
         'description', 'sql', 'pop_tab_link']
@@ -164,9 +168,10 @@ class SavedQueryView(SupersetModelView, DeleteMixin):
 
 class SavedQueryViewApi(SavedQueryView):
     list_columns = [
-        'label', 'sqlalchemy_uri', 'user_email', 'schema', 'description',
-        'sql']
-    show_columns = ['label', 'db_id', 'schema', 'description', 'sql']
+        'id', 'label', 'sqlalchemy_uri', 'user_email', 'schema', 'description',
+        'sql', 'extra_json']
+    show_columns = [
+        'label', 'db_id', 'schema', 'description', 'sql', 'extra_json']
     add_columns = show_columns
     edit_columns = add_columns
 
